@@ -1,0 +1,752 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+      <link rel="stylesheet" type="text/css" href="css\overrideTarteAuCitron.css">
+	<link rel="stylesheet" href="css/fontawesome-free-5.14.0-web/fontawesome-free-5.14.0-web/css/all.css">
+<script src="js\tarteaucitron.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+tarteaucitron.init({
+  'privacyUrl': '', /* Privacy policy url */
+
+  'hashtag': '#tarteaucitron', /* Open the panel with this hashtag */
+  'cookieName': 'tarteaucitron', /* Cookie name */
+
+  'orientation': 'bottom', /* Banner position (top - bottom) */
+  'showAlertSmall': false, /* Show the small banner on bottom right */
+  'cookieslist': true, /* Show the cookie list */
+
+  'adblocker': false, /* Show a Warning if an adblocker is detected */
+  'AcceptAllCta': true, /* Show the accept all button when highPrivacy on */
+  'highPrivacy': true, /* Disable auto consent */
+  'handleBrowserDNTRequest': false, /* If Do Not Track == 1, disallow all */
+
+  'removeCredit': true, /* Remove credit link */
+  'moreInfoLink': true, /* Show more info link */
+  'useExternalCss': false, /* If false, the tarteaucitron.css file will be loaded */
+
+  //"cookieDomain": ".my-multisite-domaine.fr", /* Shared cookie for subdomain website */
+
+  'readmoreLink': '/fr/article/cookies', /* Change the default readmore link pointing to opt-out.ferank.eu */
+});
+
+// google analytics yprox
+tarteaucitron.services.analyticsYprox = {
+  'key': 'analyticsYprox',
+  'type': 'analytic',
+  'name': 'Google Analytics',
+  'uri': 'https://support.google.com/analytics/answer/6004245',
+  'needConsent': true,
+  'cookies': ['_ga', '_gat', '_gid', '__utma', '__utmb', '__utmc', '__utmt', '__utmz'],
+  'js': function () {
+    'use strict';
+    window.ga = window.ga || function () {
+      window.ga.q = window.ga.q || [];
+      window.ga.q.push(arguments);
+    };
+    window.ga.l = new Date();
+    tarteaucitron.addScript('https://www.google-analytics.com/analytics.js', '', function () {
+      (tarteaucitron.user.gaAccountYprox || []).forEach(function (account) {
+        var uaCreate = {
+          trackingId: account.account,
+          name: account.name,
+          cookieDomain: 'auto',
+          cookieExpires: 34128000, /* ~13 months */
+        };
+
+        tarteaucitron.extend(uaCreate, tarteaucitron.user.analyticsUaCreate || {});
+
+        ga('create', uaCreate);
+        ga(account.name + '.require', 'displayfeatures');
+        ga(account.name + '.send', 'pageview');
+      });
+    });
+  },
+  'fallback': function () {
+    'use strict';
+    window.ga = window.ga || function () {
+      window.ga.q = window.ga.q || [];
+      window.ga.q.push(arguments);
+    };
+    window.ga.l = new Date();
+    tarteaucitron.addScript('https://www.google-analytics.com/analytics.js', '', function () {
+      (tarteaucitron.user.gaAccountYprox || []).forEach(function (account) {
+        var uaCreate = {
+          trackingId: account.account,
+          storage: 'none',
+          name: account.name,
+          cookieDomain: 'auto',
+          cookieExpires: 34128000, /* ~13 months */
+        };
+
+        tarteaucitron.extend(uaCreate, tarteaucitron.user.analyticsUaCreate || {});
+
+        ga('create', uaCreate);
+        ga('set', 'anonymizeIp', true);
+        ga(account.name + '.require', 'displayfeatures');
+        ga(account.name + '.send', 'pageview');
+      });
+    });
+  },
+};
+</script>
+
+<script type="application/javascript">
+  
+  
+  
+  
+  
+  
+                  tarteaucitron.user.analyticsUa = 'UA-56263308-41';
+      (tarteaucitron.user.gaAccountYprox = tarteaucitron.user.gaAccountYprox || []).push({ 'account': 'UA-20551895-60', 'name': 'plateformeGA1' });
+        (tarteaucitron.job = tarteaucitron.job || []).push('analyticsYprox');
+  
+  
+      (tarteaucitron.job = tarteaucitron.job || []).push('facebook');
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      (tarteaucitron.job = tarteaucitron.job || []).push('linkedin');
+  
+  
+  
+  
+  
+  
+      (tarteaucitron.job = tarteaucitron.job || []).push('twitter');
+  
+  
+  
+  
+  cookiesBannerMessage = "Ce site utilise des cookies pour rendre votre navigation meilleure. En continuant votre navigation, vous acceptez l&#039;utilisation de ceux-ci.";
+
+cookiesAcceptAll = "OK";
+
+tarteaucitronCustomText = {
+  'alertBigPrivacy': cookiesBannerMessage,
+  'acceptAll': cookiesAcceptAll
+};
+</script>
+  
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link rel="preconnect" href="index-1.htm" crossorigin="">
+    <link rel="preconnect" href="index-2.htm" crossorigin="">
+    <link rel="preconnect" href="https://www.gstatic.com" crossorigin="">
+    <link rel="preconnect" href="https://cdn.apple-mapkit.com" crossorigin="">
+    <link rel="preconnect" href="https://cdn1.apple-mapkit.com" crossorigin="">
+    <link rel="preconnect" href="https://cdn2.apple-mapkit.com" crossorigin="">
+    <link rel="preconnect" href="https://cdn3.apple-mapkit.com" crossorigin="">
+    <link rel="preconnect" href="https://cdn4.apple-mapkit.com" crossorigin="">
+
+            
+    
+                            
+                    <meta name="description" content="Volets roulants ou volets battants, confiez-nous la réparation ou la pose de volets roulants.">
+
+            <meta name="keywords" content="pose de volets roulants, pose de volet roulant à Agen, pose de volets battants, pose de volet battant , réparation de volet roulant, réparation de volets roulants ">
+    
+            <meta name="og:image" content="/media/original/volets-207624.jpg">
+    
+                
+        
+            
+                    
+            
+    <title>PBMM : Pose et réparation de volet roulant </title>
+
+    <link rel="icon" type="image/png" href="media\original\key-144-245409-208756.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="media\original\key-144-245409-208756.png">
+    <link rel="apple-touch-icon-precomposed" sizes="128x128" href="media\original\key-144-245409-208756.png">    <link href="css\reset.css" media="screen" rel="stylesheet" type='text/css'>
+    <style>
+        /* https://github.com/verlok/lazyload#show-the-images-while-they-load */
+        img:not([src]) {
+            visibility: hidden;
+        }
+
+        /* Fixes Firefox anomaly during image load */
+        @-moz-document url-prefix() {
+            img:-moz-loading {
+                visibility: hidden;
+            }
+        }
+    </style>
+
+  <script>
+  var sentryEnvironment = 'prod';
+  var YproxThemeEngine = 'weymouth';
+</script>
+
+    <link rel="stylesheet" href="css\jquery.fancybox.css">
+<link rel="stylesheet" href="bundles\yproxfrontarticle\css\tango\skin.css">
+<link rel="stylesheet" href="css\legacy.css">
+<link rel="stylesheet" href="css\lightslider.min.css">
+<link rel="stylesheet" href="css\lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet\theme\9098-1583233178.css">
+<link rel="stylesheet" type="text/css" href="stylesheet\site\21185\extra.css">
+    <script src="ajax\libs\jquery\1.9.1\jquery.min.js"></script>
+<script src="js\cookie.js"></script>
+<script src="js\nl2br.js"></script>
+<script src="js\fancybox.min.js"></script>
+<script src="js\jquery.cycle2.min.js"></script>
+<script src="js\jquery.jcarousel.min.js"></script>
+<script src="js\jquery.lightslider.min.js"></script>
+<script src="js\jquery.lightgallery.min.js"></script>
+<script src="js\article_slider.min.js"></script>
+<script src="js\jquery.slimmenu.min.js"></script>
+        
+<script type="text/javascript">
+jQuery(document).ready(function(){
+  $("#ytb_group_footer").insertAfter('#ytb_wrapper');
+});
+
+
+
+</script>
+
+    
+    <script src="jquery-migrate-1.2.1.js"></script>
+
+            <script type="text/javascript">
+              function recaptchaGoogle() {
+                $('div[id^="google-recaptcha-contact"]').each(function () {
+                  var contentId = $(this).data('contentid');
+
+                  if (window['recaptcha' + contentId] !== undefined) {
+                    return;
+                  }
+
+                  window['recaptcha' + contentId] = grecaptcha.render($(this).attr('id'), {
+                    sitekey: '6Lf0FqQUAAAAAHQc6KXfTqiAmPd0Ip0TQiFx6drl',
+                    action: 'article',
+                    size: 'invisible',
+                    callback: window['launchSubmit' + contentId]
+                  });
+                });
+              }
+            </script>
+            <script type="text/javascript" src="recaptcha\api.js?hl=fr&onload=recaptchaGoogle&render=explicit"></script>
+            
+    </head>
+<body class="layout-default">
+
+
+    
+<script type="application/ld+json">
+{
+    "@context": "http:\/\/schema.org",
+    "@type": "LocalBusiness",
+    "name": "PBMM",
+    "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "France",
+        "addressLocality": "Stains",
+        "postalCode": "93240",
+        "streetAddress": "11, rue Carnot"
+    },
+    "telephone": "06 52 95 94 67"
+}
+</script>
+
+
+
+<div id="ytb_wrapper">
+    <!-- App\ThemeBundle\Twig\Weymouth\ThemeHandler !-->
+<!-- START GROUP: header -->
+<div id="ytb_group_header" class="ytb_group ">
+<!-- START ROW: header -->
+<div id="ytb_row_header" class="ytb_row ">
+<!-- START BLOCK: header_1 -->
+<div id="ytb_block_header_1" class="ytb_block"><div class="ytb_extension_article content_17791 ">
+             <p><a href="index.htm"><img alt="" style="width: 212px; height: 114px;" title="" data-src="/media/original/key-144-245409-208756.png"></a></p> 
+
+</div>
+</div>
+<!-- END BLOCK: header_1 -->
+<!-- START BLOCK: header_2 -->
+<div id="ytb_block_header_2" class="ytb_block"><div class="ytb_extension_site_navigation content_29043 ">
+            
+<ul class="slimmenu nav_list nav_list_level_0" id="navigation_29043">
+            <li class="nav_item nav_item_0 nav_level_1">
+                        
+                                        
+            
+                            <a href="index.htm">
+                    Accueil
+                </a>
+            
+                    </li>
+            <li class="nav_item nav_item_1 nav_level_1">
+                        
+                                        
+            
+                            <a href="notre-entreprise.html">
+                    Notre entreprise
+                </a>
+            
+                    </li>
+            <li class="nav_item nav_item_2 nav_level_1">
+                        
+                                        
+            
+                            <a href="nos-prestations.html">
+                    Nos prestations
+                </a>
+            
+                                            <ul class="nav_list nav_list_level_1">
+            <li class="nav_item nav_item_0 nav_level_2">
+                        
+                                        
+            
+                            <a href="menuiserie.html">
+                    Menuiserie 
+                </a>
+            
+                    </li>
+            <li class="nav_item nav_item_1 nav_level_2">
+                        
+                                        
+            
+                            <a href="pose-volets.html">
+                    Pose de volets
+                </a>
+            
+                    </li>
+            <li class="nav_item nav_item_2 nav_level_2">
+                        
+                                        
+            
+                            <a href="serrurerie-metallerie.html">
+                    Serrurerie et Métallerie - Portails, clôtures et escaliers
+                </a>
+            
+                    </li>
+            
+    </ul>
+                    </li>
+            <li class="nav_item nav_item_3 nav_level_1">
+                        
+                                        
+            
+                            <a href="realisations.html">
+                    Galeries de nos réalisations
+                </a>
+            
+                                            <ul class="nav_list nav_list_level_2">
+            <li class="nav_item nav_item_0 nav_level_2">
+                        
+                                        
+            
+                            <a href="galerie-metallerie.html">
+                    Galerie Serrurerie et Métallerie ( Portails, clôtures et escaliers )
+                </a>
+            
+                    </li>
+            <li class="nav_item nav_item_1 nav_level_2">
+                        
+                                        
+            
+                            <a class="current" href="galerie-volets.html">
+                    Galerie pose, transformation et réparation de volets 
+                </a>
+            
+                    </li>
+           
+            <li class="nav_item nav_item_3 nav_level_2">
+                        
+                                        
+            
+                            <a href="galerie-menuiseries.html">
+                    Galerie Menuiseries ( Portes et fenêtres )
+                </a>
+            
+                    </li>
+    </ul>
+                    </li>
+            <li class="nav_item nav_item_4 nav_level_1">
+                        
+                                        
+            
+                            <a href="contact.html">
+                    Contact
+                </a>
+            
+                    </li>
+    </ul>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#navigation_29043').slimmenu({
+            resizeWidth: '800',
+            collapserTitle: 'Menu',
+            animSpeed: 'medium',
+            easingEffect: null,
+            indentChildren: false,
+            childrenIndenter: '&amp;nbsp;'
+        });
+    });
+</script>
+
+</div>
+</div>
+<!-- END BLOCK: header_2 -->
+<!-- START BLOCK: header_3 -->
+<div id="ytb_block_header_3" class="ytb_block"></div>
+<!-- END BLOCK: header_3 -->
+<!-- START BLOCK: header_4 -->
+<div id="ytb_block_header_4" class="ytb_block"></div>
+<!-- END BLOCK: header_4 -->
+</div>
+<!-- END ROW: header -->
+</div>
+<!-- END GROUP: header -->
+<!-- START GROUP: infos -->
+<div id="ytb_group_infos" class="ytb_group ">
+<!-- START ROW: infos -->
+<div id="ytb_row_infos" class="ytb_row ">
+<!-- START BLOCK: infos_1 -->
+<div id="ytb_block_infos_1" class="ytb_block"></div>
+<!-- END BLOCK: infos_1 -->
+<!-- START BLOCK: infos_2 -->
+<div id="ytb_block_infos_2" class="ytb_block"></div>
+<!-- END BLOCK: infos_2 -->
+</div>
+<!-- END ROW: infos -->
+<!-- START ROW: infosL -->
+<div id="ytb_row_infosL" class="ytb_row ">
+<!-- START BLOCK: infosL_1 -->
+<div id="ytb_block_infosL_1" class="ytb_block"><div class="ytb_extension_article content_18089 ">
+            <h1><span style="color:#114c98;">PBMM</span></h1>
+
+<p><span style="color:#114c98;font-weight:bold;">Volets battants ou roulants</span><b>, </b><span style="font-weight: bold; color: #114c98;">verrières intérieures et extérieures, vérandas</span><b>, </b><span style="font-weight: bold; color: #114c98;">portes, fenêtres, portes de garage,</span> <span style="font-weight: bold; color: #114c98;">portails, escaliers, gardes-corps et clôtures</span><span style="color:#114c98;">,</span> <strong>particuliers, professionnels ou collectivités, nous assurons la conception, la fabrication sur-mesure et la réparation ainsi que le suivi après pose de nos réalisations.</strong></p>
+
+<p> </p>
+
+</div>
+</div>
+<!-- END BLOCK: infosL_1 -->
+<!-- START BLOCK: infosL_2 -->
+<div id="ytb_block_infosL_2" class="ytb_block"><div class="ytb_extension_article content_17809 ">
+            <h2> </h2>
+
+<p style="text-align: center;"><span style="font-size:24px;"><strong><span style="color:#114c98;">11, rue Carnot </span></strong></span></p>
+
+<p style="text-align: center;"> </p>
+
+<p style="text-align: center;"><span style="font-size:24px;"><strong><span style="color:#114c98;"><span style="text-align:center;">93240 - </span>Stains</span></strong></span></p>
+
+<p style="text-align: center;"> </p>
+
+<p style="text-align: center;"><span style="font-size:24px;"><strong><span style="color:#114c98;">parisbatmeta@gmail.com</span></strong></span></p>
+
+</div>
+</div>
+<!-- END BLOCK: infosL_2 -->
+<!-- START BLOCK: infosL_3 -->
+<div id="ytb_block_infosL_3" class="ytb_block"></div>
+<!-- END BLOCK: infosL_3 -->
+</div>
+<!-- END ROW: infosL -->
+</div>
+<!-- END GROUP: infos -->
+<!-- START GROUP: page -->
+<div id="ytb_group_page" class="ytb_group ">
+<!-- START MAIN CONTENT -->
+<div id="ytb_row_page_content">    
+
+
+
+
+
+
+
+<style type="text/css">
+    .transparent {
+        background-color: rgba(0, 0, 0, 0.8) !important;
+    }
+
+    .customPager {
+        margin-top: 5px !important;
+    }
+
+    .sliderPhotoText {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+</style>
+
+
+                                    
+    
+<div class="article-view  " id="articleView362788">
+                <h2>
+            Galerie pose, transformation et réparation de volets battants ou roulants
+
+    
+                
+    
+            </h2>
+    
+        
+    
+    <div class="article-body">
+                                
+                                                                <div class="div-left no-article-body" id="div-slider-362788">
+                <div style="display: none" class="blockSlider ">
+            <ul class="yllyImageSelectorContent-362788" style="float: left; width: 687px;">
+                                                       <li style="cursor: pointer; list-style-type: none" class="img3627861" data-thumb="http://www.pbmm.fr/media\original\selection\Screenshot_20200120-010905_Facebook.jpg" data-src="http://www.pbmm.fr/media\original\selection\Screenshot_20200120-010905_Facebook.jpg" data-index="0">
+                            
+<img src="\media\original\selection\Screenshot_20200120-010905_Facebook.jpg" alt="" title=" ">
+                        </li>             
+				
+				<li style="cursor: pointer; list-style-type: none" class="img3627861" data-thumb="http://www.pbmm.fr/media\original\selection\11-volet-roulant-coffre-soprofen-detail-vue-interieure.jpg" data-src="http://www.pbmm.fr/media\original\selection\11-volet-roulant-coffre-soprofen-detail-vue-interieure.jpg" data-index="0">
+                            
+<img src="\media\original\selection\11-volet-roulant-coffre-soprofen-detail-vue-interieure.jpg" alt="" title=" ">
+                        </li>         
+                                                                                
+                                                </ul>
+        </div>
+    </div>
+                                                </div>
+</div>
+<br style="clear: both;">
+
+<script type="text/javascript">
+            $(window).load(function () {
+            $(".blockSlider").css("display", "block");
+            $('#div-slider-362788').before('<p class="sliderPhotoText">Photo <span class="currentPhoto362788"></span> sur <span class="totalPhoto362788"></span><span class="legendPhotoGallery362788"></span></p>');
+
+            var slider = $('.yllyImageSelectorContent-362788').lightSlider({
+                gallery: true,
+                adaptiveHeight: true,
+                item: 1,
+                                    auto: true,
+                                pause: 2500,
+                speed: 1000,
+                loop: true,
+                thumbItem: 4,
+                mode: 'fade',
+
+                onSliderLoad: function (plugin) {
+                    plugin.lightGallery({
+                        addClass: 'transparent'
+                    });
+                },
+                onBeforeStart: function (el) {
+                    $('.currentPhoto362788').text(1);
+                                    },
+                onBeforeSlide: function (el) {
+                    var num = el.getCurrentSlideCount();
+                    $('.currentPhoto362788').text(num);
+
+                                    }
+            });
+
+            $('.totalPhoto362788').text(slider.getTotalSlideCount());
+                            $('.yllyImageSelectorContent-362788').parent().on('mouseenter', function () {
+                    slider.pause();
+                });
+                $('.yllyImageSelectorContent-362788').parent().on('mouseleave', function () {
+                    slider.play();
+                });
+                        $('#lightGallery-outer').css('background-color', 'transparent');
+            $('.lSSlideOuter ').css('width', '687px');
+            $('.yllyImageSelectorContent-362788').css('cssText', 'padding-bottom: 0px !important;');
+
+            $('.lSPager').addClass("customPager");
+
+            var heightThumb = 0;
+            $(".customPager li").each(function(){
+               if ($(this).outerHeight() > heightThumb) {
+                    heightThumb = $(this).outerHeight();
+                }
+            });
+
+            var height = 0;
+            $(".yllyImageSelectorContent-362788 img").each(function(){
+                if (this.height > height) {
+                    height = this.height;
+                }
+            });
+            var totalHeight = height + heightThumb + 6;
+            $('.customPager').css('cssText', 'height: ' + heightThumb + 'px !important;');
+            $('.lSSlideOuter ').css('height', totalHeight + 'px');
+
+        });
+    </script>
+<script type="text/javascript">
+    function popitup(url) {
+        newwindow=window.open(url, 'name', 'scrollbars=1, height=600, width=530');
+        if (window.focus) {
+            newwindow.focus()
+        }
+        return false;
+    }
+</script>
+</div>
+<!-- END MAIN CONTENT -->
+</div>
+<!-- END GROUP: page -->
+<!-- START GROUP: aside -->
+<div id="ytb_group_aside" class="ytb_group ">
+<!-- START ROW: aside -->
+<div id="ytb_row_aside" class="ytb_row ">
+<!-- START BLOCK: aside_1 -->
+<div id="ytb_block_aside_1" class="ytb_block"><div class="ytb_extension_article content_18090 ">
+            <p><a href="index.htm">Accueil</a></p>
+
+</div>
+</div>
+<!-- END BLOCK: aside_1 -->
+<!-- START BLOCK: aside_2 -->
+<div id="ytb_block_aside_2" class="ytb_block"><div class="ytb_extension_article content_18088 ">
+            <p><a href="notre-entreprise.html">Notre entreprise &gt;&gt;</a></p>
+
+</div>
+</div>
+<!-- END BLOCK: aside_2 -->
+<!-- START BLOCK: aside_3 -->
+<div id="ytb_block_aside_3" class="ytb_block"><div class="ytb_extension_article content_18082 ">
+            <p><a href="nos-prestations.html">&lt;&lt; Nos prestations</a></p>
+
+</div>
+</div>
+<!-- END BLOCK: aside_3 -->
+<!-- START BLOCK: aside_4 -->
+<div id="ytb_block_aside_4" class="ytb_block"><div class="ytb_extension_article content_18084 ">
+            <p><a href="realisations.html">&lt;&lt; Nos réalisations</a></p>
+
+</div>
+</div>
+<!-- END BLOCK: aside_4 -->
+<!-- START BLOCK: aside_5 -->
+<div id="ytb_block_aside_5" class="ytb_block"><div class="ytb_extension_article content_18085 ">
+            <p><a href="contact.html">Contact &gt;&gt;</a></p>
+
+</div>
+</div>
+<!-- END BLOCK: aside_5 -->
+<!-- START BLOCK: aside_6 -->
+<div id="ytb_block_aside_6" class="ytb_block"></div>
+<!-- END BLOCK: aside_6 -->
+</div>
+<!-- END ROW: aside -->
+<!-- START ROW: asideL -->
+<div id="ytb_row_asideL" class="ytb_row ">
+<!-- START BLOCK: asideL_1 -->
+<div id="ytb_block_asideL_1" class="ytb_block"><div class="ytb_extension_article content_18092 ">
+            <p><a href="index.htm">Retour à l'accueil</a></p>
+
+</div>
+</div>
+<!-- END BLOCK: asideL_1 -->
+<!-- START BLOCK: asideL_2 -->
+<div id="ytb_block_asideL_2" class="ytb_block"><div class="ytb_extension_article content_18081 ">
+            <p><a href="notre-entreprise.html">Découvrez nos valeurs et notre histoire</a></p>
+
+</div>
+</div>
+<!-- END BLOCK: asideL_2 -->
+<!-- START BLOCK: asideL_3 -->
+<div id="ytb_block_asideL_3" class="ytb_block"><div class="ytb_extension_article content_18080 ">
+            <p><a href="nos-prestations.html">Découvrez notre savoir-faire</a></p>
+
+</div>
+</div>
+<!-- END BLOCK: asideL_3 -->
+<!-- START BLOCK: asideL_4 -->
+<div id="ytb_block_asideL_4" class="ytb_block"><div class="ytb_extension_article content_18083 ">
+            <p><a href="realisations.html">Vois toutes nos réalisations</a></p>
+
+</div>
+</div>
+<!-- END BLOCK: asideL_4 -->
+<!-- START BLOCK: asideL_5 -->
+<div id="ytb_block_asideL_5" class="ytb_block"><div class="ytb_extension_article content_18086 ">
+            <p><a href="contact.html">Contactez-nous ! </a></p>
+
+</div>
+</div>
+<!-- END BLOCK: asideL_5 -->
+<!-- START BLOCK: asideL_6 -->
+<div id="ytb_block_asideL_6" class="ytb_block"></div>
+<!-- END BLOCK: asideL_6 -->
+</div>
+<!-- END ROW: asideL -->
+</div>
+<!-- END GROUP: aside -->
+<!-- START GROUP: footer -->
+<div id="ytb_group_footer" class="ytb_group ">
+<!-- START ROW: footer -->
+<div id="ytb_row_footer" class="ytb_row ">
+<!-- START BLOCK: footer_1 -->
+<div id="ytb_block_footer_1" class="ytb_block"><div class="ytb_extension_article content_17813 ">
+            <p><span class="st">PBMM : PARIS BAT MENUISERIE METALLURGIE © 2020</span></p>
+	<br/> 
+	
+		
+				
+<span class="social">	
+<ul id="social" style="font-size:24px;">
+				<li><a target="_blank" href="https://www.instagram.com/parisbatmeta/"><i class="fab  fa-instagram "></i></a></li>	
+	<li><a target="_blank" href="https://www.facebook.com/PBMM-106506264502813/"><i class="fab  fa-facebook-square"></i> </a></li> 																														
+	</ul> 
+		</span>
+
+</div>
+</div>
+<!-- END BLOCK: footer_1 -->
+<!-- START BLOCK: footer_2 -->
+<div id="ytb_block_footer_2" class="ytb_block"><div class="ytb_extension_article content_17815 ">
+            <p><a href="mentions-legales.html">Mentions légales</a> - <a href="contact.html">contact</a></p>
+
+</div>
+<br class="automaticBreak"><div class="ytb_extension_theme content_ ">
+            <p>Site créé par <a href="https://www.dinawebmaster.com" target="_blank" rel="noreferrer noopener">Dina Verdi</a></p>
+</div>
+</div>
+<!-- END BLOCK: footer_2 -->
+</div>
+<!-- END ROW: footer -->
+</div>
+<!-- END GROUP: footer -->
+</div>
+
+  <div class="tarteaucitronBlockManage" style="width: 100%;background:black;position:absolute;padding:10px 0;text-align:center;">
+    <a class="tarteaucitonLinkManage" href="#" onclick="tarteaucitron.userInterface.openPanel();" style="color:white;font-size:14px;">Gestion des cookies</a>
+  </div>
+
+<script src="npm\intersection-observer@0.7.0\intersection-observer.js"></script>
+<script>
+    // Set the options to make LazyLoad self-initialize
+    window.lazyLoadOptions = {};
+</script>
+<script async="" src="npm\vanilla-lazyload@12.4.0\dist\lazyload.min.js"></script>
+
+<script type="text/javascript">
+  $('#divInfoOnTop_Hidden').show();
+  $('#divInfoOnTop_Shown_ImgClose').click(function () {
+    $('#divInfoOnTop_Shown').hide('slow', function () {
+      $('#divInfoOnTop_Hidden').show('fast');
+    });
+  });
+  $('#divInfoOnTop_Hidden').click(function () {
+    $(this).hide('fast', function () {
+      $('#divInfoOnTop_Shown').show('slow');
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+body {
+background-image:url(../../../media/original/test-1-207542.png);
+}
+
+/*Menu - fond de couleurs*/
+
+
+
+.social.ul
+{
+	padding:0;
+ margin:20px;
+ list-style-type:none;
+}
+
+social.li {
+ margin-right:30px;
+ float:right; /*pour IE*/
+ }
+
+.social ul li a {
+ display:block;
+ float:right;   
+ width:23px;
+ color:black;
+ text-decoration:none;
+ 
+ padding:0;
+	
+
+ /*pour avoir un effet "outset" avec IE :*/
+ 
+ }
+
+#ytb_row_CL #ytb_block_CL_1,
+#ytb_row_infosL #ytb_block_infosL_1 {
+ width: 100%; 
+}
+
+ul.slimmenu li a {
+  display: block;
+  padding: 8px 10px;
+}
+ul.slimmenu li a:hover {
+  color: #7c7e79;
+}
+#ytb_row_aside a {
+  font-size: 1.6em;
+}
+
+ul.slimmenu li>ul {
+  top: 100%;
+}
+
+ul.slimmenu > li > ul > li {
+  background-color: #fff;
+}
+
+ul.slimmenu li ul {
+  background-color: #fff;
+}
+
+ul.slimmenu li ul li a {
+  padding: 0.5rem;
+  width: auto;
+}
+
+ul.slimmenu li ul li a:hover {
+  color: #7c7e79;
+}
+
+#ytb_block_header_2 ul {
+  overflow: initial;
+}
+/*Fin menu*/
+
+#ytb_group_page .article-body h2 {
+  text-transform: initial;
+}

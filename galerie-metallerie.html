@@ -1,0 +1,1246 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+      <link rel="stylesheet" type="text/css" href="css\overrideTarteAuCitron.css">
+	<link rel="stylesheet" href="css/fontawesome-free-5.14.0-web/fontawesome-free-5.14.0-web/css/all.css">
+<script src="js\tarteaucitron.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+tarteaucitron.init({
+  'privacyUrl': '', /* Privacy policy url */
+
+  'hashtag': '#tarteaucitron', /* Open the panel with this hashtag */
+  'cookieName': 'tarteaucitron', /* Cookie name */
+
+  'orientation': 'bottom', /* Banner position (top - bottom) */
+  'showAlertSmall': false, /* Show the small banner on bottom right */
+  'cookieslist': true, /* Show the cookie list */
+
+  'adblocker': false, /* Show a Warning if an adblocker is detected */
+  'AcceptAllCta': true, /* Show the accept all button when highPrivacy on */
+  'highPrivacy': true, /* Disable auto consent */
+  'handleBrowserDNTRequest': false, /* If Do Not Track == 1, disallow all */
+
+  'removeCredit': true, /* Remove credit link */
+  'moreInfoLink': true, /* Show more info link */
+  'useExternalCss': false, /* If false, the tarteaucitron.css file will be loaded */
+
+  //"cookieDomain": ".my-multisite-domaine.fr", /* Shared cookie for subdomain website */
+
+  'readmoreLink': '/fr/article/cookies', /* Change the default readmore link pointing to opt-out.ferank.eu */
+});
+
+// google analytics yprox
+tarteaucitron.services.analyticsYprox = {
+  'key': 'analyticsYprox',
+  'type': 'analytic',
+  'name': 'Google Analytics',
+  'uri': 'https://support.google.com/analytics/answer/6004245',
+  'needConsent': true,
+  'cookies': ['_ga', '_gat', '_gid', '__utma', '__utmb', '__utmc', '__utmt', '__utmz'],
+  'js': function () {
+    'use strict';
+    window.ga = window.ga || function () {
+      window.ga.q = window.ga.q || [];
+      window.ga.q.push(arguments);
+    };
+    window.ga.l = new Date();
+    tarteaucitron.addScript('https://www.google-analytics.com/analytics.js', '', function () {
+      (tarteaucitron.user.gaAccountYprox || []).forEach(function (account) {
+        var uaCreate = {
+          trackingId: account.account,
+          name: account.name,
+          cookieDomain: 'auto',
+          cookieExpires: 34128000, /* ~13 months */
+        };
+
+        tarteaucitron.extend(uaCreate, tarteaucitron.user.analyticsUaCreate || {});
+
+        ga('create', uaCreate);
+        ga(account.name + '.require', 'displayfeatures');
+        ga(account.name + '.send', 'pageview');
+      });
+    });
+  },
+  'fallback': function () {
+    'use strict';
+    window.ga = window.ga || function () {
+      window.ga.q = window.ga.q || [];
+      window.ga.q.push(arguments);
+    };
+    window.ga.l = new Date();
+    tarteaucitron.addScript('https://www.google-analytics.com/analytics.js', '', function () {
+      (tarteaucitron.user.gaAccountYprox || []).forEach(function (account) {
+        var uaCreate = {
+          trackingId: account.account,
+          storage: 'none',
+          name: account.name,
+          cookieDomain: 'auto',
+          cookieExpires: 34128000, /* ~13 months */
+        };
+
+        tarteaucitron.extend(uaCreate, tarteaucitron.user.analyticsUaCreate || {});
+
+        ga('create', uaCreate);
+        ga('set', 'anonymizeIp', true);
+        ga(account.name + '.require', 'displayfeatures');
+        ga(account.name + '.send', 'pageview');
+      });
+    });
+  },
+};
+</script>
+
+<script type="application/javascript">
+  
+  
+  
+  
+  
+  
+                  tarteaucitron.user.analyticsUa = 'UA-56263308-41';
+      (tarteaucitron.user.gaAccountYprox = tarteaucitron.user.gaAccountYprox || []).push({ 'account': 'UA-20551895-60', 'name': 'plateformeGA1' });
+        (tarteaucitron.job = tarteaucitron.job || []).push('analyticsYprox');
+  
+  
+      (tarteaucitron.job = tarteaucitron.job || []).push('facebook');
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      (tarteaucitron.job = tarteaucitron.job || []).push('linkedin');
+  
+  
+  
+  
+  
+  
+      (tarteaucitron.job = tarteaucitron.job || []).push('twitter');
+  
+  
+  
+  
+  cookiesBannerMessage = "Ce site utilise des cookies pour rendre votre navigation meilleure. En continuant votre navigation, vous acceptez l&#039;utilisation de ceux-ci.";
+
+cookiesAcceptAll = "OK";
+
+tarteaucitronCustomText = {
+  'alertBigPrivacy': cookiesBannerMessage,
+  'acceptAll': cookiesAcceptAll
+};
+</script>
+  
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link rel="preconnect" href="index-1.htm" crossorigin="">
+    <link rel="preconnect" href="index-2.htm" crossorigin="">
+    <link rel="preconnect" href="https://www.gstatic.com" crossorigin="">
+    <link rel="preconnect" href="https://cdn.apple-mapkit.com" crossorigin="">
+    <link rel="preconnect" href="https://cdn1.apple-mapkit.com" crossorigin="">
+    <link rel="preconnect" href="https://cdn2.apple-mapkit.com" crossorigin="">
+    <link rel="preconnect" href="https://cdn3.apple-mapkit.com" crossorigin="">
+    <link rel="preconnect" href="https://cdn4.apple-mapkit.com" crossorigin="">
+
+            
+    
+                            
+                    <meta name="description" content="Création sur-mesure et pose de portails, gardes-corps, véranda, porte de garage et clôtures .">
+
+            <meta name="keywords" content="clôtures, portail, gardes-corps, porte de garage, escalier, véranda">
+    
+            <meta name="og:image" content="/media/original/metallerie-7-207595.jpg">
+    
+                
+        
+            
+                    
+            
+    <title>Création sur-mesure de portails, gardes-corps et clôtures </title>
+
+    <link rel="icon" type="image/png" href="media\original\key-144-245409-208756.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="media\original\key-144-245409-208756.png">
+    <link rel="apple-touch-icon-precomposed" sizes="128x128" href="media\original\key-144-245409-208756.png">    <link href="css\reset.css" media="screen" rel="stylesheet" type='text/css'>
+    <style>
+        /* https://github.com/verlok/lazyload#show-the-images-while-they-load */
+        img:not([src]) {
+            visibility: hidden;
+        }
+
+        /* Fixes Firefox anomaly during image load */
+        @-moz-document url-prefix() {
+            img:-moz-loading {
+                visibility: hidden;
+            }
+        }
+    </style>
+
+  <script>
+  var sentryEnvironment = 'prod';
+  var YproxThemeEngine = 'weymouth';
+</script>
+
+    <link rel="stylesheet" href="css\jquery.fancybox.css">
+<link rel="stylesheet" href="bundles\yproxfrontarticle\css\tango\skin.css">
+<link rel="stylesheet" href="css\legacy.css">
+<link rel="stylesheet" href="css\lightslider.min.css">
+<link rel="stylesheet" href="css\lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet\theme\9098-1583233178.css">
+<link rel="stylesheet" type="text/css" href="stylesheet\site\21185\extra.css">
+    <script src="ajax\libs\jquery\1.9.1\jquery.min.js"></script>
+<script src="js\cookie.js"></script>
+<script src="js\nl2br.js"></script>
+<script src="js\fancybox.min.js"></script>
+<script src="js\jquery.cycle2.min.js"></script>
+<script src="js\jquery.jcarousel.min.js"></script>
+<script src="js\jquery.lightslider.min.js"></script>
+<script src="js\jquery.lightgallery.min.js"></script>
+<script src="js\article_slider.min.js"></script>
+<script src="js\jquery.slimmenu.min.js"></script>
+        
+<script type="text/javascript">
+jQuery(document).ready(function(){
+  $("#ytb_group_footer").insertAfter('#ytb_wrapper');
+});
+
+
+
+</script>
+
+    
+    <script src="jquery-migrate-1.2.1.js"></script>
+
+            <script type="text/javascript">
+              function recaptchaGoogle() {
+                $('div[id^="google-recaptcha-contact"]').each(function () {
+                  var contentId = $(this).data('contentid');
+
+                  if (window['recaptcha' + contentId] !== undefined) {
+                    return;
+                  }
+
+                  window['recaptcha' + contentId] = grecaptcha.render($(this).attr('id'), {
+                    sitekey: '6Lf0FqQUAAAAAHQc6KXfTqiAmPd0Ip0TQiFx6drl',
+                    action: 'article',
+                    size: 'invisible',
+                    callback: window['launchSubmit' + contentId]
+                  });
+                });
+              }
+            </script>
+            <script type="text/javascript" src="recaptcha\api.js?hl=fr&onload=recaptchaGoogle&render=explicit"></script>
+            
+    </head>
+<body class="layout-default">
+
+
+    
+<script type="application/ld+json">
+{
+    "@context": "http:\/\/schema.org",
+    "@type": "LocalBusiness",
+    "name": "PBMM",
+    "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "France",
+        "addressLocality": "Stains",
+        "postalCode": "93240",
+        "streetAddress": "11, rue Carnot"
+    },
+    "telephone": "09 51 86 32 87"
+}
+</script>
+
+
+
+<div id="ytb_wrapper">
+    <!-- App\ThemeBundle\Twig\Weymouth\ThemeHandler !-->
+<!-- START GROUP: header -->
+<div id="ytb_group_header" class="ytb_group ">
+<!-- START ROW: header -->
+<div id="ytb_row_header" class="ytb_row ">
+<!-- START BLOCK: header_1 -->
+<div id="ytb_block_header_1" class="ytb_block"><div class="ytb_extension_article content_17791 ">
+           <p><a href="index.htm"><img alt="" style="width: 212px; height: 114px;" title="" data-src="/media/original/key-144-245409-208756.png"></a></p>
+
+
+</div>
+</div>
+<!-- END BLOCK: header_1 -->
+<!-- START BLOCK: header_2 -->
+<div id="ytb_block_header_2" class="ytb_block"><div class="ytb_extension_site_navigation content_29043 ">
+            
+<ul class="slimmenu nav_list nav_list_level_0" id="navigation_29043">
+            <li class="nav_item nav_item_0 nav_level_1">
+                        
+                                        
+            
+                            <a href="index.htm">
+                    Accueil
+                </a>
+            
+                    </li>
+            <li class="nav_item nav_item_1 nav_level_1">
+                        
+                                        
+            
+                            <a href="notre-entreprise.html">
+                    Notre entreprise
+                </a>
+            
+                    </li>
+            <li class="nav_item nav_item_2 nav_level_1">
+                        
+                                        
+            
+                            <a href="nos-prestations.html">
+                    Nos prestations
+                </a>
+            
+                                            <ul class="nav_list nav_list_level_1">
+            <li class="nav_item nav_item_0 nav_level_2">
+                        
+                                        
+            
+                            <a href="menuiserie.html">
+                    Menuiserie 
+                </a>
+            
+                    </li>
+            <li class="nav_item nav_item_1 nav_level_2">
+                        
+                                        
+            
+                            <a href="pose-volets.html">
+                    Pose de volets
+                </a>
+            
+                    </li>
+            <li class="nav_item nav_item_2 nav_level_2">
+                        
+                                        
+            
+                            <a href="serrurerie-metallerie.html">
+                    Serrurerie et Métallerie - Portails, clôtures et escaliers
+                </a>
+            
+                    </li>
+           
+    </ul>
+                    </li>
+            <li class="nav_item nav_item_3 nav_level_1">
+                        
+                                        
+            
+                            <a href="realisations.html">
+                    Galeries de nos réalisations
+                </a>
+            
+                                            <ul class="nav_list nav_list_level_2">
+            <li class="nav_item nav_item_0 nav_level_2">
+                        
+                                        
+            
+                            <a class="current" href="galerie-metallerie.html">
+                    Galerie Serrurerie et Métallerie ( Portails, clôtures et escaliers )
+                </a>
+            
+                    </li>
+            <li class="nav_item nav_item_1 nav_level_2">
+                        
+                                        
+            
+                            <a href="galerie-volets.html">
+                    Galerie pose, transformation et réparation de volets 
+                </a>
+            
+                    </li>
+           
+            <li class="nav_item nav_item_3 nav_level_2">
+                        
+                                        
+            
+                            <a href="galerie-menuiseries.html">
+                    Galerie Menuiseries ( Portes et fenêtres )
+                </a>
+            
+                    </li>
+    </ul>
+                    </li>
+            <li class="nav_item nav_item_4 nav_level_1">
+                        
+                                        
+            
+                            <a href="contact.html">
+                    Contact
+                </a>
+            
+                    </li>
+    </ul>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#navigation_29043').slimmenu({
+            resizeWidth: '800',
+            collapserTitle: 'Menu',
+            animSpeed: 'medium',
+            easingEffect: null,
+            indentChildren: false,
+            childrenIndenter: '&amp;nbsp;'
+        });
+    });
+</script>
+
+</div>
+</div>
+<!-- END BLOCK: header_2 -->
+<!-- START BLOCK: header_3 -->
+<div id="ytb_block_header_3" class="ytb_block"></div>
+<!-- END BLOCK: header_3 -->
+<!-- START BLOCK: header_4 -->
+<div id="ytb_block_header_4" class="ytb_block"></div>
+<!-- END BLOCK: header_4 -->
+</div>
+<!-- END ROW: header -->
+</div>
+<!-- END GROUP: header -->
+<!-- START GROUP: infos -->
+<div id="ytb_group_infos" class="ytb_group ">
+<!-- START ROW: infos -->
+<div id="ytb_row_infos" class="ytb_row ">
+<!-- START BLOCK: infos_1 -->
+<div id="ytb_block_infos_1" class="ytb_block"></div>
+<!-- END BLOCK: infos_1 -->
+<!-- START BLOCK: infos_2 -->
+<div id="ytb_block_infos_2" class="ytb_block"></div>
+<!-- END BLOCK: infos_2 -->
+</div>
+<!-- END ROW: infos -->
+<!-- START ROW: infosL -->
+<div id="ytb_row_infosL" class="ytb_row ">
+<!-- START BLOCK: infosL_1 -->
+<div id="ytb_block_infosL_1" class="ytb_block"><div class="ytb_extension_article content_18089 ">
+            <h1><span style="color:#114c98;">PBMM</span></h1>
+
+<p><span style="color:#114c98;font-weight:bold;">Volets battants ou roulants</span><b>, </b><span style="font-weight: bold; color: #114c98;">verrières intérieures et extérieures, vérandas</span><b>, </b><span style="font-weight: bold; color: rgb#114c98;">portes, fenêtres, portes de garage,</span> <span style="font-weight: bold; color: rgb#114c98;">portails, escaliers, gardes-corps et clôtures</span><span style="color:#114c98;">,</span> <strong>particuliers, professionnels ou collectivités, nous assurons la conception, la fabrication sur-mesure et la réparation ainsi que le suivi après pose de nos réalisations.</strong></p>
+
+<p> </p>
+
+</div>
+</div>
+<!-- END BLOCK: infosL_1 -->
+<!-- START BLOCK: infosL_2 -->
+<div id="ytb_block_infosL_2" class="ytb_block"><div class="ytb_extension_article content_17809 ">
+            <h2> </h2>
+
+<p style="text-align: center;"><span style="font-size:24px;"><strong><span style="color:#114c98;">11, rue Carnot</span></strong></span></p>
+
+<p style="text-align: center;"> </p>
+
+<p style="text-align: center;"><span style="font-size:24px;"><strong><span style="color:#114c98;"><span style="text-align:center;">93240 - </span>Stains</span></strong></span></p>
+
+<p style="text-align: center;"> </p>
+
+<p style="text-align: center;"><span style="font-size:24px;"><strong><span style="color:#114c98;">parisbatmeta@gmail.com</span></strong></span></p>
+
+</div>
+</div>
+<!-- END BLOCK: infosL_2 -->
+<!-- START BLOCK: infosL_3 -->
+<div id="ytb_block_infosL_3" class="ytb_block"></div>
+<!-- END BLOCK: infosL_3 -->
+</div>
+<!-- END ROW: infosL -->
+</div>
+<!-- END GROUP: infos -->
+<!-- START GROUP: page -->
+<div id="ytb_group_page" class="ytb_group ">
+<!-- START MAIN CONTENT -->
+<div id="ytb_row_page_content">    
+
+
+
+
+
+
+
+<style type="text/css">
+    .transparent {
+        background-color: rgba(0, 0, 0, 0.8) !important;
+    }
+
+    .customPager {
+        margin-top: 5px !important;
+    }
+
+    .sliderPhotoText {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+</style>
+
+
+                                    
+    
+<div class="article-view  " id="articleView362787">
+                <h2>
+            Galerie Métallerie ( Portails, clôtures, garde-corps et escaliers )
+
+    
+                
+    
+            </h2>
+    
+        
+    
+    <div class="article-body">
+                                
+                                                                <div class="div-left no-article-body" id="div-slider-362787">
+                <div style="display: none" class="blockSlider ">
+            <ul class="yllyImageSelectorContent-362787" style="float: left; width: 687px;">
+							
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/selection/IMG-20191031-WA0000.jpg" data-src="http://www.pbmm.fr/media/original/selection/IMG-20191031-WA0000.jpg" data-index="25">
+                            
+<img src="media/original/selection/IMG-20191031-WA0000.jpg" alt="" title="">
+                        </li>
+				
+				
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/selection/IMG-20191106-WA0005.jpg" data-src="http://www.pbmm.fr/media/original/selection/IMG-20191106-WA0005.jpg" data-index="25">
+                            
+<img src="media/original/selection/IMG-20191106-WA0005.jpg" alt="" title="">
+                        </li>
+				
+				
+				
+				
+				
+					 <li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/48398726_416560552216403_8512035434417618944_n.jpg" data-src="http://www.pbmm.fr/media/original/img/48398726_416560552216403_8512035434417618944_n.jpg" data-index="25">
+                            
+<img src="media/original/img/48398726_416560552216403_8512035434417618944_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/51136477_2051097598278627_860463768239341568_n.jpg" data-src="http://www.pbmm.fr/media/original/img/51136477_2051097598278627_860463768239341568_n.jpg" data-index="25">
+                            
+<img src="media/original/img/51136477_2051097598278627_860463768239341568_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/51231897_295446787785441_6837750053067554816_n.jpg" data-src="http://www.pbmm.fr/media/original/img/51231897_295446787785441_6837750053067554816_n.jpg" data-index="25">
+                            
+<img src="media/original/img/51231897_295446787785441_6837750053067554816_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/52451488_590198574831304_1446600493450133504_n.jpg" data-src="http://www.pbmm.fr/media/original/img/52451488_590198574831304_1446600493450133504_n.jpg" data-index="25">
+                            
+<img src="media/original/img/52451488_590198574831304_1446600493450133504_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/52694944_1301583416655458_3181064379571372032_n.jpg" data-src="http://www.pbmm.fr/media/original/img/52694944_1301583416655458_3181064379571372032_n.jpg" data-index="25">
+                            
+<img src="media/original/img/52694944_1301583416655458_3181064379571372032_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/53121536_2100472256910551_3175979773948067840_n.jpg" data-src="http://www.pbmm.fr/media/original/img/53121536_2100472256910551_3175979773948067840_n.jpg" data-index="25">
+                            
+<img src="media/original/img/53121536_2100472256910551_3175979773948067840_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/54279406_2019225628382792_8227566143947145216_n.jpg" data-src="http://www.pbmm.fr/media/original/img/54279406_2019225628382792_8227566143947145216_n.jpg" data-index="25">
+                            
+<img src="media/original/img/54279406_2019225628382792_8227566143947145216_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/55492858_2582700038469483_8121321056909656064_n.jpg" data-src="http://www.pbmm.fr/media/original/img/55492858_2582700038469483_8121321056909656064_n.jpg" data-index="25">
+                            
+<img src="media/original/img/55492858_2582700038469483_8121321056909656064_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/55702132_421195678709947_6654698950638960640_n.jpg" data-src="http://www.pbmm.fr/media/original/img/55702132_421195678709947_6654698950638960640_n.jpg" data-index="25">
+                            
+<img src="media/original/img/55702132_421195678709947_6654698950638960640_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/60662115_437632663679577_1046011058415730688_n.jpg" data-src="http://www.pbmm.fr/media/original/img/60662115_437632663679577_1046011058415730688_n.jpg" data-index="25">
+                            
+<img src="media/original/img/60662115_437632663679577_1046011058415730688_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/61351228_684601181961699_3578465999684370432_n.jpg" data-src="http://www.pbmm.fr/media/original/img/61351228_684601181961699_3578465999684370432_n.jpg" data-index="25">
+                            
+<img src="media/original/img/61351228_684601181961699_3578465999684370432_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/62172419_906171436392538_3388597749069905920_n.jpg" data-src="http://www.pbmm.fr/media/original/img/62172419_906171436392538_3388597749069905920_n.jpg" data-index="25">
+                            
+<img src="media/original/img/62172419_906171436392538_3388597749069905920_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/65387283_365005210871692_3817223141474697216_n.jpg" data-src="http://www.pbmm.fr/media/original/img/65387283_365005210871692_3817223141474697216_n.jpg" data-index="25">
+                            
+<img src="media/original/img/65387283_365005210871692_3817223141474697216_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/70434985_474737606588914_1825517338825326592_n.jpg" data-src="http://www.pbmm.fr/media/original/img/70434985_474737606588914_1825517338825326592_n.jpg" data-index="25">
+                            
+<img src="media/original/img/70434985_474737606588914_1825517338825326592_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/71300800_2387345811528102_3558693941643575296_n.jpg" data-src="http://www.pbmm.fr/media/original/img/71300800_2387345811528102_3558693941643575296_n.jpg" data-index="25">
+                            
+<img src="media/original/img/71300800_2387345811528102_3558693941643575296_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/71307815_1652796111519614_6820039347400605696_n.jpg" data-src="http://www.pbmm.fr/media/original/img/71307815_1652796111519614_6820039347400605696_n.jpg" data-index="25">
+                            
+<img src="media/original/img/71307815_1652796111519614_6820039347400605696_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/72558391_487590985428591_1653617066713808896_n.jpg" data-src="http://www.pbmm.fr/media/original/img/72558391_487590985428591_1653617066713808896_n.jpg" data-index="25">
+                            
+<img src="media/original/img/72558391_487590985428591_1653617066713808896_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/73417731_924654831381542_1733450278725255224_njpg" data-src="http://www.pbmm.fr/media/original/img/73417731_924654831381542_1733450278725255224_n.jpg" data-index="25">
+                            
+<img src="media/original/img/73417731_924654831381542_1733450278725255224_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/73497848_2451477551617059_7625526675257688064_n.jpg" data-src="http://www.pbmm.fr/media/original/img/73497848_2451477551617059_7625526675257688064_n.jpg" data-index="25">
+                            
+<img src="media/original/img/73497848_2451477551617059_7625526675257688064_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/74302795_2331088647202903_3465418934285500416_n.jpg" data-src="http://www.pbmm.fr/media/original/img/74302795_2331088647202903_3465418934285500416_n.jpg" data-index="25">
+                            
+<img src="media/original/img/74302795_2331088647202903_3465418934285500416_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/75356918_719154262268652_4171387331140460704_n.jpg" data-src="http://www.pbmm.fr/media/original/img/75356918_719154262268652_4171387331140460704_n.jpg" data-index="25">
+                            
+<img src="media/original/img/75356918_719154262268652_4171387331140460704_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/75481762_1767517606706211_6502565522477940736_n.jpg" data-src="http://www.pbmm.fr/media/original/img/75481762_1767517606706211_6502565522477940736_n.jpg" data-index="25">
+                            
+<img src="media/original/img/75481762_1767517606706211_6502565522477940736_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/75557467_1291309467721372_334049933373997056_n.jpg" data-src="http://www.pbmm.fr/media/original/img/75557467_1291309467721372_334049933373997056_n.jpg" data-index="25">
+                            
+<img src="media/original/img/75557467_1291309467721372_334049933373997056_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/76609853_2550618841712904_2628511150404272128_n.jpg" data-src="http://www.pbmm.fr/media/original/img/76609853_2550618841712904_2628511150404272128_n.jpg" data-index="25">
+                            
+<img src="media/original/img/76609853_2550618841712904_2628511150404272128_n.jpg" alt="" title="">
+                        </li>
+				
+				
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/78354864_2688683991390291_6141968537981288448_n.jpg" data-src="http://www.pbmm.fr/media/original/img/78354864_2688683991390291_6141968537981288448_n.jpg" data-index="25">
+                            
+<img src="media/original/img/78354864_2688683991390291_6141968537981288448_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/78368724_700963826979341_3088530537539698688_n.jpg" data-src="http://www.pbmm.fr/media/original/img/78368724_700963826979341_3088530537539698688_n.jpg" data-index="25">
+                            
+<img src="media/original/img/78368724_700963826979341_3088530537539698688_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/78580709_809059852884063_3945052376204836864_n.jpg" data-src="http://www.pbmm.fr/media/original/img/78580709_809059852884063_3945052376204836864_n.jpg" data-index="25">
+                            
+<img src="media/original/img/78580709_809059852884063_3945052376204836864_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/78645016_2715961175290498_2121495552511180800_n.jpg" data-src="http://www.pbmm.fr/media/original/img/78645016_2715961175290498_2121495552511180800_n.jpg" data-index="25">
+                            
+<img src="media/original/img/78645016_2715961175290498_2121495552511180800_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/79158995_698238444289320_7275016717808435200_n.jpg" data-src="http://www.pbmm.fr/media/original/img/79158995_698238444289320_7275016717808435200_n.jpg" data-index="25">
+                            
+<img src="media/original/img/79158995_698238444289320_7275016717808435200_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/79200609_2552524108199758_9174980361157869568_n.jpg" data-src="http://www.pbmm.fr/media/original/img/79200609_2552524108199758_9174980361157869568_n.jpg" data-index="25">
+                            
+<img src="media/original/img/79200609_2552524108199758_9174980361157869568_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/79449136_593906858202722_3529872108337233920_n.jpg" data-src="http://www.pbmm.fr/media/original/img/79449136_593906858202722_3529872108337233920_n.jpg" data-index="25">
+                            
+<img src="media/original/img/79449136_593906858202722_3529872108337233920_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/80567580_2919582381440934_1192538862765735936_n.jpg" data-src="http://www.pbmm.fr/media/original/img/80567580_2919582381440934_1192538862765735936_n.jpg" data-index="25">
+                            
+<img src="media/original/img/80567580_2919582381440934_1192538862765735936_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/80732239_3192255954135380_5334138898169724928_n.jpg" data-src="http://www.pbmm.fr/media/original/img/80732239_3192255954135380_5334138898169724928_njpg" data-index="25">
+                            
+<img src="media/original/img/80732239_3192255954135380_5334138898169724928_n.jpg" alt="" title="">
+                        </li>
+				
+				
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/81200802_762875964215354_7339841342106763264_n.jpg" data-src="http://www.pbmm.fr/media/original/img/81200802_762875964215354_7339841342106763264_n.jpg" data-index="25">
+                            
+<img src="media/original/img/81200802_762875964215354_7339841342106763264_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/82286971_469534197268818_8238895747982950400_n.jpg" data-src="http://www.pbmm.fr/media/original/img/82286971_469534197268818_8238895747982950400_n.jpg" data-index="25">
+                            
+<img src="media/original/img/82286971_469534197268818_8238895747982950400_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/82600833_480113172889158_1621339923627900928_n.jpg" data-src="http://www.pbmm.fr/media/original/img/82600833_480113172889158_1621339923627900928_n.jpg" data-index="25">
+                            
+<img src="media/original/img/82600833_480113172889158_1621339923627900928_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/83487039_521979232008451_1096840952686837760_n.jpg" data-src="http://www.pbmm.fr/media/original/img/83487039_521979232008451_1096840952686837760_n.jpg" data-index="25">
+                            
+<img src="media/original/img/83487039_521979232008451_1096840952686837760_n.jpg" alt="" title="">
+                        </li>
+				
+				
+							<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/84078075_136660404107370_8704307861695496192_n.jpg" data-src="http://www.pbmm.fr/media/original/img/84078075_136660404107370_8704307861695496192_n.jpg" data-index="25">
+                            
+<img src="media/original/img/84078075_136660404107370_8704307861695496192_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/84173176_489146308693201_1475472908586319872_n.jpg" data-src="http://www.pbmm.fr/media/original/img/84173176_489146308693201_1475472908586319872_n.jpg" data-index="25">
+                            
+<img src="media/original/img/84173176_489146308693201_1475472908586319872_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/84388175_3585426264819941_8382017713329032055_n.jpg" data-src="http://www.pbmm.fr/media/original/img/84388175_3585426264819941_8382017713329032055_n.jpg" data-index="25">
+                            
+<img src="media/original/img/84388175_3585426264819941_8382017713329032055_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/86350035_2722227981214508_3606683359293472768_n.jpg" data-src="http://www.pbmm.fr/media/original/img/86350035_2722227981214508_3606683359293472768_n.jpg" data-index="25">
+                            
+<img src="media/original/img/86350035_2722227981214508_3606683359293472768_n.jpg" alt="" title="">
+                        </li>
+								   
+																	   
+																	   
+		<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/87035409_187209902537332_6743341861538103296_n.jpg" data-src="http://www.pbmm.fr/media/original/img/87035409_187209902537332_6743341861538103296_n.jpg" data-index="25">
+                            
+<img src="media/original/img/87035409_187209902537332_6743341861538103296_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/87156067_612318252950582_5537355078211469312_n.jpg" data-src="http://www.pbmm.fr/media/original/img/87156067_612318252950582_5537355078211469312_n.jpg" data-index="25">
+                            
+<img src="media/original/img/87156067_612318252950582_5537355078211469312_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/87263497_579140919615963_594496775973240832_n.jpg" data-src="http://www.pbmm.fr/media/original/img/87263497_579140919615963_594496775973240832_n.jpg" data-index="25">
+                            
+<img src="media/original/img/87263497_579140919615963_594496775973240832_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/87356924_2363091577322957_5162034473377726464_n.jpg" data-src="http://www.pbmm.fr/media/original/img/87356924_2363091577322957_5162034473377726464_n.jpg" data-index="25">
+                            
+<img src="media/original/img/87356924_2363091577322957_5162034473377726464_n.jpg" alt="" title="">
+                        </li>
+				
+				
+				
+				
+				
+		<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/87399714_588723521726705_665326344371961856_n.jpg" data-src="http://www.pbmm.fr/media/original/img/87399714_588723521726705_665326344371961856_n.jpg" data-index="25">
+                            
+<img src="media/original/img/87399714_588723521726705_665326344371961856_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/87507306_818135601986076_7697211401709813760_n.jpg" data-src="http://www.pbmm.fr/media/original/img/87507306_818135601986076_7697211401709813760_n.jpg" data-index="25">
+                            
+<img src="media/original/img/87507306_818135601986076_7697211401709813760_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/87550855_1895681847231938_1819993504076529664_n.jpg" data-src="http://www.pbmm.fr/media/original/img/87550855_1895681847231938_1819993504076529664_n.jpg" data-index="25">
+                            
+<img src="media/original/img/87550855_1895681847231938_1819993504076529664_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/87583108_608297273341415_250889689962119168_n.jpg" data-src="http://www.pbmm.fr/media/original/img/87583108_608297273341415_250889689962119168_n.jpg" data-index="25">
+                            
+<img src="media/original/img/87583108_608297273341415_250889689962119168_n.jpg" alt="" title="">
+                        </li>
+												   
+																	   
+																	   
+		<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/87614921_194070015266998_1283552758821027840_n.jpg" data-src="http://www.pbmm.fr/media/original/img/87614921_194070015266998_1283552758821027840_n.jpg" data-index="25">
+                            
+<img src="media/original/img/87614921_194070015266998_1283552758821027840_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/87675353_2303252413301456_532019355597144064_n.jpg" data-src="http://www.pbmm.fr/media/original/img/87675353_2303252413301456_532019355597144064_n.jpg" data-index="25">
+                            
+<img src="media/original/img/87675353_2303252413301456_532019355597144064_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/87685674_671359613631803_5171375069468819456_n.jpg" data-src="http://www.pbmm.fr/media/original/img/87685674_671359613631803_5171375069468819456_n.jpg" data-index="25">
+                            
+<img src="media/original/img/87685674_671359613631803_5171375069468819456_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/87775483_482567655747675_5955766454270820352_n.jpg" data-src="http://www.pbmm.fr/media/original/img/87775483_482567655747675_5955766454270820352_n.jpg" data-index="25">
+                            
+<img src="media/original/img/87775483_482567655747675_5955766454270820352_n.jpg" alt="" title="">
+                        </li>
+				
+				
+				
+				
+				
+		<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/87812086_184555616177991_6343401812673953792_n.jpg" data-src="http://www.pbmm.fr/media/original/img/87812086_184555616177991_6343401812673953792_n.jpg" data-index="25">
+                            
+<img src="media/original/img/87812086_184555616177991_6343401812673953792_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/87821649_529804904635227_842717697811677184_n.jpg" data-src="http://www.pbmm.fr/media/original/img/87821649_529804904635227_842717697811677184_n.jpg" data-index="25">
+                            
+<img src="media/original/img/87821649_529804904635227_842717697811677184_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/87834303_230089345050924_6119628080907550720_n.jpg" data-src="http://www.pbmm.fr/media/original/img/87834303_230089345050924_6119628080907550720_n.jpg" data-index="25">
+                            
+<img src="media/original/img/87834303_230089345050924_6119628080907550720_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/87853970_238813220473339_6971456765858676736_n.jpg" data-src="http://www.pbmm.fr/media/original/img/87853970_238813220473339_6971456765858676736_n.jpg" data-index="25">
+                            
+<img src="media/original/img/87853970_238813220473339_6971456765858676736_n.jpg" alt="" title="">
+                        </li>
+				
+				
+	<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/89119425_891881231230997_8426717670019170304_n.jpg" data-src="http://www.pbmm.fr/media/original/img/89119425_891881231230997_8426717670019170304_n.jpg" data-index="25">
+                            
+<img src="media/original/img/89119425_891881231230997_8426717670019170304_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/89152415_513339426271659_276135795490816000_n.jpg" data-src="http://www.pbmm.fr/media/original/img/89152415_513339426271659_276135795490816000_n.jpg" data-index="25">
+                            
+<img src="media/original/img/89152415_513339426271659_276135795490816000_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/89209560_224910005317661_3904293712091414528_n.jpg" data-src="http://www.pbmm.fr/media/original/img/89209560_224910005317661_3904293712091414528_n.jpg" data-index="25">
+                            
+<img src="media/original/img/89209560_224910005317661_3904293712091414528_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/89306008_810162922815530_6865344839987232768_n.jpg" data-src="http://www.pbmm.fr/media/original/img/89306008_810162922815530_6865344839987232768_n.jpg" data-index="25">
+                            
+<img src="media/original/img/89306008_810162922815530_6865344839987232768_n.jpg" alt="" title="">
+                        </li>			
+				
+				
+		
+				
+	<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/89352506_563897774211114_1434151015346601984_n.jpg" data-src="http://www.pbmm.fr/media/original/img/89352506_563897774211114_1434151015346601984_n.jpg" data-index="25">
+                            
+<img src="media/original/img/89352506_563897774211114_1434151015346601984_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/89358035_895717590850229_3659932999484440576_n.jpg" data-src="http://www.pbmm.fr/media/original/img/89358035_895717590850229_3659932999484440576_n.jpg" data-index="25">
+                            
+<img src="media/original/img/89358035_895717590850229_3659932999484440576_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/89390085_295770038057079_4042904555980062720_n.jpg" data-src="http://www.pbmm.fr/media/original/img/89390085_295770038057079_4042904555980062720_n.jpg" data-index="25">
+                            
+<img src="media/original/img/89390085_295770038057079_4042904555980062720_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/89427504_2515314221908071_8627824965284003840_n.jpg" data-src="http://www.pbmm.fr/media/original/img/89427504_2515314221908071_8627824965284003840_n.jpg" data-index="25">
+                            
+<img src="media/original/img/89427504_2515314221908071_8627824965284003840_n.jpg" alt="" title="">
+                        </li>				
+				
+				
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/89434085_3101202859892355_6096999723586027520_n.jpg" data-src="http://www.pbmm.fr/media/original/img/89434085_3101202859892355_6096999723586027520_n.jpg" data-index="25">
+                            
+<img src="media/original/img/89434085_3101202859892355_6096999723586027520_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/89437238_616339082553008_8398506847350292480_n.jpg" data-src="http://www.pbmm.fr/media/original/img/89437238_616339082553008_8398506847350292480_n.jpg" data-index="25">
+                            
+<img src="media/original/img/89437238_616339082553008_8398506847350292480_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/89442237_2729707447137477_7209864172757057536_n.jpg" data-src="http://www.pbmm.fr/media/original/img/89442237_2729707447137477_7209864172757057536_n.jpg" data-index="25">
+                            
+<img src="media/original/img/89442237_2729707447137477_7209864172757057536_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/89445404_515569985819464_1605041725330423808_n.jpg" data-src="http://www.pbmm.fr/media/original/img/89445404_515569985819464_1605041725330423808_n.jpg" data-index="25">
+                            
+<img src="media/original/img/89445404_515569985819464_1605041725330423808_n.jpg" alt="" title="">
+                        </li>				
+				
+				
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/89499377_2788800321175882_7795088432165814272_n.jpg" data-src="http://www.pbmm.fr/media/original/img/89499377_2788800321175882_7795088432165814272_n.jpg" data-index="25">
+                            
+<img src="media/original/img/89499377_2788800321175882_7795088432165814272_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/89602076_186257682672949_7963937460726005760_n.jpg" data-src="http://www.pbmm.fr/media/original/img/89602076_186257682672949_7963937460726005760_n.jpg" data-index="25">
+                            
+<img src="media/original/img/89602076_186257682672949_7963937460726005760_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/89906356_823571618123894_2392825051964506112_n.jpg" data-src="http://www.pbmm.fr/media/original/img/89906356_823571618123894_2392825051964506112_n.jpg" data-index="25">
+                            
+<img src="media/original/img/89906356_823571618123894_2392825051964506112_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/90001254_1129492217396460_7438097300347420672_n.jpg" data-src="http://www.pbmm.fr/media/original/img/90001254_1129492217396460_7438097300347420672_n.jpg" data-index="25">
+                            
+<img src="media/original/img/90001254_1129492217396460_7438097300347420672_n.jpg" alt="" title="">
+                        </li>	
+				
+				
+					
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/90159381_205856960478862_1108107150120452096_n.jpg" data-src="http://www.pbmm.fr/media/original/img/90159381_205856960478862_1108107150120452096_n.jpg" data-index="25">
+                            
+<img src="media/original/img/90159381_205856960478862_1108107150120452096_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/91995894_533549427594553_8372226612480966656_n.jpg" data-src="http://www.pbmm.fr/media/original/img/91995894_533549427594553_8372226612480966656_n.jpg" data-index="25">
+                            
+<img src="media/original/img/91995894_533549427594553_8372226612480966656_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/92586110_640575550111703_3199836569225658368_n.jpg" data-src="http://www.pbmm.fr/media/original/img/92586110_640575550111703_3199836569225658368_n.jpg" data-index="25">
+                            
+<img src="media/original/img/92586110_640575550111703_3199836569225658368_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/93109372_803313880156705_2985171363582443520_n.jpg" data-src="http://www.pbmm.fr/media/original/img/93109372_803313880156705_2985171363582443520_n.jpg" data-index="25">
+                            
+<img src="media/original/img/93109372_803313880156705_2985171363582443520_n.jpg" alt="" title="">
+                        </li>	
+				
+				
+			<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/93398362_881008649029183_2383857976294244352_n.jpg" data-src="http://www.pbmm.fr/media/original/img/93398362_881008649029183_2383857976294244352_n.jpg" data-index="25">
+                            
+<img src="media/original/img/93398362_881008649029183_2383857976294244352_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/93481196_3527606500590125_5970824755639484416_n.jpg" data-src="http://www.pbmm.fr/media/original/img/93481196_3527606500590125_5970824755639484416_n.jpg" data-index="25">
+                            
+<img src="media/original/img/93481196_3527606500590125_5970824755639484416_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/93608008_234136954495280_7701685735430029312_n.jpg" data-src="http://www.pbmm.fr/media/original/img/93608008_234136954495280_7701685735430029312_n.jpg" data-index="25">
+                            
+<img src="media/original/img/93608008_234136954495280_7701685735430029312_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/93670701_176892600066524_7640038364728524800_n.jpg" data-src="http://www.pbmm.fr/media/original/img/93670701_176892600066524_7640038364728524800_n.jpg" data-index="25">
+                            
+<img src="media/original/img/93670701_176892600066524_7640038364728524800_n.jpg" alt="" title="">
+                        </li>		
+				
+										
+				
+			<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/93707352_2512321465750535_2794799605361934336_n.jpg" data-src="http://www.pbmm.fr/media/original/img/93707352_2512321465750535_2794799605361934336_n.jpg" data-index="25">
+                            
+<img src="media/original/img/93707352_2512321465750535_2794799605361934336_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/93771840_215625736548414_2261761118449958912_n.jpg" data-src="http://www.pbmm.fr/media/original/img/93771840_215625736548414_2261761118449958912_n.jpg" data-index="25">
+                            
+<img src="media/original/img/93771840_215625736548414_2261761118449958912_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/93795932_508361039832467_5375816101168939008_n.jpg" data-src="http://www.pbmm.fr/media/original/img/93795932_508361039832467_5375816101168939008_n.jpg" data-index="25">
+                            
+<img src="media/original/img/93795932_508361039832467_5375816101168939008_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/93806580_245515229925934_6065790210585657344_n.jpg" data-src="http://www.pbmm.fr/media/original/img/93806580_245515229925934_6065790210585657344_n.jpg" data-index="25">
+                            
+<img src="media/original/img/93806580_245515229925934_6065790210585657344_n.jpg" alt="" title="">
+                        </li>		
+						
+				
+				
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/93949315_551387335756427_654795380914913280_n.jpg" data-src="http://www.pbmm.fr/media/original/img/93949315_551387335756427_654795380914913280_n.jpg" data-index="25">
+                            
+<img src="media/original/img/93949315_551387335756427_654795380914913280_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/94030767_528988481148209_6364392984296816640_n.jpg" data-src="http://www.pbmm.fr/media/original/img/94030767_528988481148209_6364392984296816640_n.jpg" data-index="25">
+                            
+<img src="media/original/img/94030767_528988481148209_6364392984296816640_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/94103178_225970811839010_7840937470043619328_n.jpg" data-src="http://www.pbmm.fr/media/original/img/94103178_225970811839010_7840937470043619328_n.jpg" data-index="25">
+                            
+<img src="media/original/img/94103178_225970811839010_7840937470043619328_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/94121932_2752220438180160_8316666580532461568_n.jpg" data-src="http://www.pbmm.fr/media/original/img/94121932_2752220438180160_8316666580532461568_n.jpg" data-index="25">
+                            
+<img src="media/original/img/94121932_2752220438180160_8316666580532461568_n.jpg" alt="" title="">
+                        </li>		
+						
+					
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/94580663_543225966383410_5455232284149940224_n.jpg" data-src="http://www.pbmm.fr/media/original/img/94580663_543225966383410_5455232284149940224_n.jpg" data-index="25">
+                            
+<img src="media/original/img/94580663_543225966383410_5455232284149940224_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/95712085_1374234699427305_6423755440986783744_n.jpg" data-src="http://www.pbmm.fr/media/original/img/95712085_1374234699427305_6423755440986783744_n.jpg" data-index="25">
+                            
+<img src="media/original/img/95712085_1374234699427305_6423755440986783744_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/95956168_529970087887797_6903542286253031424_n.jpg" data-src="http://www.pbmm.fr/media/original/img/95956168_529970087887797_6903542286253031424_n.jpg" data-index="25">
+                            
+<img src="media/original/img/95956168_529970087887797_6903542286253031424_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/96239615_270275877347679_3185314928315596800_n.jpg" data-src="http://www.pbmm.fr/media/original/img/96239615_270275877347679_3185314928315596800_n.jpg" data-index="25">
+                            
+<img src="media/original/img/96239615_270275877347679_3185314928315596800_n.jpg" alt="" title="">
+                        </li>	
+				
+				
+					<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/96292070_242899820249523_1193065253957533696_n.jpg" data-src="http://www.pbmm.fr/media/original/img/96292070_242899820249523_1193065253957533696_n.jpg" data-index="25">
+                            
+<img src="media/original/img/96292070_242899820249523_1193065253957533696_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/96363170_550442305656233_4977481566914609152_n.jpg" data-src="http://www.pbmm.fr/media/original/img/96363170_550442305656233_4977481566914609152_n.jpg" data-index="25">
+                            
+<img src="media/original/img/96363170_550442305656233_4977481566914609152_n.jpg" alt="" title="">
+                        </li>
+				
+				
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/97070022_169114547824048_1947867062869164032_n.jpg" data-src="http://www.pbmm.fr/media/original/img/97070022_169114547824048_1947867062869164032_n.jpg" data-index="25">
+                            
+<img src="media/original/img/97070022_169114547824048_1947867062869164032_n.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/img/97080617_701479680681788_4140556491495047168_n.jpg" data-src="http://www.pbmm.fr/media/original/img/97080617_701479680681788_4140556491495047168_n.jpg" data-index="25">
+                            
+<img src="media/original/img/97080617_701479680681788_4140556491495047168_n.jpg" alt="" title="">
+                        </li>
+				
+				
+																	   
+				
+				
+				
+				
+				
+			<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/selection/portillon_20180906_1521061599.jpg" data-src="http://www.pbmm.fr/media/original/selection/portillon_20180906_1521061599.jpg" data-index="25">
+                            
+<img src="media/original/selection/portillon_20180906_1521061599.jpg" alt="" title="">
+                        </li>	
+				
+				
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/selection/m-18.jpg" data-src="http://www.pbmm.fr/media/original/selection/m-18.jpg" data-index="25">
+                            
+<img src="media/original/selection/m-18.jpg" alt="" title="">
+                        </li>
+				
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/selection/csm_portail_classique_dc37b35d58.jpg" data-src="http://www.pbmm.fr/media/original/selection/csm_portail_classique_dc37b35d58.jpg" data-index="25">
+                            
+<img src="media/original/selection/csm_portail_classique_dc37b35d58.jpg" alt="" title="">
+                        </li>
+				
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/selection/IMG-20190821-WA0003.jpg" data-src="http://www.pbmm.fr/media/original/selection/IMG-20190821-WA0003.jpg" data-index="25">
+                            
+<img src="media/original/selection/IMG-20190821-WA0003.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/selection/5441.jpg" data-src="http://www.pbmm.fr/media/original/selection/5441.jpg" data-index="25">
+                            
+<img src="media/original/selection/5441.jpg" alt="" title="">
+                        </li> 
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/selection/Screenshot_20200211-122350_Gallery.jpg" data-src="http://www.pbmm.fr/media/original/selection/Screenshot_20200211-122350_Gallery.jpg" data-index="25">
+                            
+<img src="media/original/selection/Screenshot_20200211-122350_Gallery.jpg" alt="" title="">
+                        </li>
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/selection/Screenshot_20200211-122401_Gallery.jpg" data-src="http://www.pbmm.fr/media/original/selection/Screenshot_20200211-122401_Gallery.jpg" data-index="25">
+                            
+<img src="media/original/selection/Screenshot_20200211-122401_Gallery.jpg" alt="" title="">
+                        </li>
+				
+			<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/selection/Screenshot_20200119-181500_Gallery.jpg" data-src="http://www.pbmm.fr/media/original/selection/Screenshot_20200119-181500_Gallery.jpg" data-index="25">
+                            
+<img src="media/original/selection/Screenshot_20200119-181500_Gallery.jpg" alt="" title="">
+                        </li>	
+				
+				<li style="cursor: pointer; list-style-type: none" class="img36278726" data-thumb="http://www.pbmm.fr/media/original/selection/Screenshot_20191103-185710_Facebook.jpg" data-src="http://www.pbmm.fr/media/original/selection/Screenshot_20191103-185710_Facebook.jpg" data-index="25">
+                            
+<img src="media/original/selection/Screenshot_20191103-185710_Facebook.jpg" alt="" title="">
+                        </li>	
+                                                                            
+                                                </ul>
+        </div>
+    </div>
+                                                </div>
+</div>
+<br style="clear: both;">
+
+<script type="text/javascript">
+            $(window).load(function () {
+            $(".blockSlider").css("display", "block");
+            $('#div-slider-362787').before('<p class="sliderPhotoText">Photo <span class="currentPhoto362787"></span> sur <span class="totalPhoto362787"></span><span class="legendPhotoGallery362787"></span></p>');
+
+            var slider = $('.yllyImageSelectorContent-362787').lightSlider({
+                gallery: true,
+                adaptiveHeight: true,
+                item: 1,
+                                    auto: true,
+                                pause: 2500,
+                speed: 1000,
+                loop: true,
+                thumbItem: 4,
+                mode: 'fade',
+
+                onSliderLoad: function (plugin) {
+                    plugin.lightGallery({
+                        addClass: 'transparent'
+                    });
+                },
+                onBeforeStart: function (el) {
+                    $('.currentPhoto362787').text(1);
+                                    },
+                onBeforeSlide: function (el) {
+                    var num = el.getCurrentSlideCount();
+                    $('.currentPhoto362787').text(num);
+
+                                    }
+            });
+
+            $('.totalPhoto362787').text(slider.getTotalSlideCount());
+                            $('.yllyImageSelectorContent-362787').parent().on('mouseenter', function () {
+                    slider.pause();
+                });
+                $('.yllyImageSelectorContent-362787').parent().on('mouseleave', function () {
+                    slider.play();
+                });
+                        $('#lightGallery-outer').css('background-color', 'transparent');
+            $('.lSSlideOuter ').css('width', '687px');
+            $('.yllyImageSelectorContent-362787').css('cssText', 'padding-bottom: 0px !important;');
+
+            $('.lSPager').addClass("customPager");
+
+            var heightThumb = 0;
+            $(".customPager li").each(function(){
+               if ($(this).outerHeight() > heightThumb) {
+                    heightThumb = $(this).outerHeight();
+                }
+            });
+
+            var height = 0;
+            $(".yllyImageSelectorContent-362787 img").each(function(){
+                if (this.height > height) {
+                    height = this.height;
+                }
+            });
+            var totalHeight = height + heightThumb + 6;
+            $('.customPager').css('cssText', 'height: ' + heightThumb + 'px !important;');
+            $('.lSSlideOuter ').css('height', totalHeight + 'px');
+
+        });
+    </script>
+<script type="text/javascript">
+    function popitup(url) {
+        newwindow=window.open(url, 'name', 'scrollbars=1, height=600, width=530');
+        if (window.focus) {
+            newwindow.focus()
+        }
+        return false;
+    }
+</script>
+</div>
+<!-- END MAIN CONTENT -->
+</div>
+<!-- END GROUP: page -->
+<!-- START GROUP: aside -->
+<div id="ytb_group_aside" class="ytb_group ">
+<!-- START ROW: aside -->
+<div id="ytb_row_aside" class="ytb_row ">
+<!-- START BLOCK: aside_1 -->
+<div id="ytb_block_aside_1" class="ytb_block"><div class="ytb_extension_article content_18090 ">
+            <p><a href="index.htm">Accueil</a></p>
+
+</div>
+</div>
+<!-- END BLOCK: aside_1 -->
+<!-- START BLOCK: aside_2 -->
+<div id="ytb_block_aside_2" class="ytb_block"><div class="ytb_extension_article content_18088 ">
+            <p><a href="notre-entreprise.html">Notre entreprise &gt;&gt;</a></p>
+
+</div>
+</div>
+<!-- END BLOCK: aside_2 -->
+<!-- START BLOCK: aside_3 -->
+<div id="ytb_block_aside_3" class="ytb_block"><div class="ytb_extension_article content_18082 ">
+            <p><a href="nos-prestations.html">&lt;&lt; Nos prestations</a></p>
+
+</div>
+</div>
+<!-- END BLOCK: aside_3 -->
+<!-- START BLOCK: aside_4 -->
+<div id="ytb_block_aside_4" class="ytb_block"><div class="ytb_extension_article content_18084 ">
+            <p><a href="realisations.html">&lt;&lt; Nos réalisations</a></p>
+
+</div>
+</div>
+<!-- END BLOCK: aside_4 -->
+<!-- START BLOCK: aside_5 -->
+<div id="ytb_block_aside_5" class="ytb_block"><div class="ytb_extension_article content_18085 ">
+            <p><a href="contact.html">Contact &gt;&gt;</a></p>
+
+</div>
+</div>
+<!-- END BLOCK: aside_5 -->
+<!-- START BLOCK: aside_6 -->
+<div id="ytb_block_aside_6" class="ytb_block"></div>
+<!-- END BLOCK: aside_6 -->
+</div>
+<!-- END ROW: aside -->
+<!-- START ROW: asideL -->
+<div id="ytb_row_asideL" class="ytb_row ">
+<!-- START BLOCK: asideL_1 -->
+<div id="ytb_block_asideL_1" class="ytb_block"><div class="ytb_extension_article content_18092 ">
+            <p><a href="index.htm">Retour à l'accueil</a></p>
+
+</div>
+</div>
+<!-- END BLOCK: asideL_1 -->
+<!-- START BLOCK: asideL_2 -->
+<div id="ytb_block_asideL_2" class="ytb_block"><div class="ytb_extension_article content_18081 ">
+            <p><a href="notre-entreprise.html">Découvrez nos valeurs et notre histoire</a></p>
+
+</div>
+</div>
+<!-- END BLOCK: asideL_2 -->
+<!-- START BLOCK: asideL_3 -->
+<div id="ytb_block_asideL_3" class="ytb_block"><div class="ytb_extension_article content_18080 ">
+            <p><a href="nos-prestations.html">Découvrez notre savoir-faire</a></p>
+
+</div>
+</div>
+<!-- END BLOCK: asideL_3 -->
+<!-- START BLOCK: asideL_4 -->
+<div id="ytb_block_asideL_4" class="ytb_block"><div class="ytb_extension_article content_18083 ">
+            <p><a href="realisations.html">Vois toutes nos réalisations</a></p>
+
+</div>
+</div>
+<!-- END BLOCK: asideL_4 -->
+<!-- START BLOCK: asideL_5 -->
+<div id="ytb_block_asideL_5" class="ytb_block"><div class="ytb_extension_article content_18086 ">
+            <p><a href="contact.html">Contactez-nous ! </a></p>
+
+</div>
+</div>
+<!-- END BLOCK: asideL_5 -->
+<!-- START BLOCK: asideL_6 -->
+<div id="ytb_block_asideL_6" class="ytb_block"></div>
+<!-- END BLOCK: asideL_6 -->
+</div>
+<!-- END ROW: asideL -->
+</div>
+<!-- END GROUP: aside -->
+<!-- START GROUP: footer -->
+<div id="ytb_group_footer" class="ytb_group ">
+<!-- START ROW: footer -->
+<div id="ytb_row_footer" class="ytb_row ">
+<!-- START BLOCK: footer_1 -->
+<div id="ytb_block_footer_1" class="ytb_block"><div class="ytb_extension_article content_17813 ">
+            <p><span class="st">PBMM : PARIS BAT MENUISERIE METALLURGIE © 2020</span></p> <br/> 
+	
+		
+				
+<span class="social">	
+<ul id="social" style="font-size:24px;">
+				<li><a target="_blank" href="https://www.instagram.com/parisbatmeta/"><i class="fab  fa-instagram "></i></a></li>	
+	<li><a target="_blank" href="https://www.facebook.com/PBMM-106506264502813/"><i class="fab  fa-facebook-square"></i> </a></li> 																														
+	</ul> 
+		</span>	
+
+</div>
+</div>
+<!-- END BLOCK: footer_1 -->
+<!-- START BLOCK: footer_2 -->
+<div id="ytb_block_footer_2" class="ytb_block"><div class="ytb_extension_article content_17815 ">
+            <p><a href="mentions-legales.html">Mentions légales</a> - <a href="contact.html">contact</a></p>
+
+</div>
+<br class="automaticBreak"><div class="ytb_extension_theme content_ ">
+            <p>Site créé par <a href="https://www.dinawebmaster.com" target="_blank" rel="noreferrer noopener">Dina Verdi</a></p>
+</div>
+</div>
+<!-- END BLOCK: footer_2 -->
+</div>
+<!-- END ROW: footer -->
+</div>
+<!-- END GROUP: footer -->
+</div>
+
+  <div class="tarteaucitronBlockManage" style="width: 100%;background:black;position:absolute;padding:10px 0;text-align:center;">
+    <a class="tarteaucitonLinkManage" href="#" onclick="tarteaucitron.userInterface.openPanel();" style="color:white;font-size:14px;">Gestion des cookies</a>
+  </div>
+
+<script src="npm\intersection-observer@0.7.0\intersection-observer.js"></script>
+<script>
+    // Set the options to make LazyLoad self-initialize
+    window.lazyLoadOptions = {};
+</script>
+<script async="" src="npm\vanilla-lazyload@12.4.0\dist\lazyload.min.js"></script>
+
+<script type="text/javascript">
+  $('#divInfoOnTop_Hidden').show();
+  $('#divInfoOnTop_Shown_ImgClose').click(function () {
+    $('#divInfoOnTop_Shown').hide('slow', function () {
+      $('#divInfoOnTop_Hidden').show('fast');
+    });
+  });
+  $('#divInfoOnTop_Hidden').click(function () {
+    $(this).hide('fast', function () {
+      $('#divInfoOnTop_Shown').show('slow');
+    });
+  });
+</script>
+
+</body>
+</html>

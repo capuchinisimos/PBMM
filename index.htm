@@ -1,0 +1,764 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css\overrideTarteAuCitron.css"
+    />
+    <link
+      rel="stylesheet"
+      href="css/fontawesome-free-5.14.0-web/fontawesome-free-5.14.0-web/css/all.css"
+    />
+    <script src="js\tarteaucitron.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      tarteaucitron.init({
+        privacyUrl: "" /* Privacy policy url */,
+
+        hashtag: "#tarteaucitron" /* Open the panel with this hashtag */,
+        cookieName: "tarteaucitron" /* Cookie name */,
+
+        orientation: "bottom" /* Banner position (top - bottom) */,
+        showAlertSmall: false /* Show the small banner on bottom right */,
+        cookieslist: true /* Show the cookie list */,
+
+        adblocker: false /* Show a Warning if an adblocker is detected */,
+        AcceptAllCta: true /* Show the accept all button when highPrivacy on */,
+        highPrivacy: true /* Disable auto consent */,
+        handleBrowserDNTRequest: false /* If Do Not Track == 1, disallow all */,
+
+        removeCredit: true /* Remove credit link */,
+        moreInfoLink: true /* Show more info link */,
+        useExternalCss: false /* If false, the tarteaucitron.css file will be loaded */,
+
+        //"cookieDomain": ".my-multisite-domaine.fr", /* Shared cookie for subdomain website */
+
+        readmoreLink:
+          "/fr/article/cookies" /* Change the default readmore link pointing to opt-out.ferank.eu */,
+      });
+
+      // google analytics yprox
+      tarteaucitron.services.analyticsYprox = {
+        key: "analyticsYprox",
+        type: "analytic",
+        name: "Google Analytics",
+        uri: "https://support.google.com/analytics/answer/6004245",
+        needConsent: true,
+        cookies: [
+          "_ga",
+          "_gat",
+          "_gid",
+          "__utma",
+          "__utmb",
+          "__utmc",
+          "__utmt",
+          "__utmz",
+        ],
+        js: function () {
+          "use strict";
+          window.ga =
+            window.ga ||
+            function () {
+              window.ga.q = window.ga.q || [];
+              window.ga.q.push(arguments);
+            };
+          window.ga.l = new Date();
+          tarteaucitron.addScript(
+            "https://www.google-analytics.com/analytics.js",
+            "",
+            function () {
+              (tarteaucitron.user.gaAccountYprox || []).forEach(function (
+                account
+              ) {
+                var uaCreate = {
+                  trackingId: account.account,
+                  name: account.name,
+                  cookieDomain: "auto",
+                  cookieExpires: 34128000 /* ~13 months */,
+                };
+
+                tarteaucitron.extend(
+                  uaCreate,
+                  tarteaucitron.user.analyticsUaCreate || {}
+                );
+
+                ga("create", uaCreate);
+                ga(account.name + ".require", "displayfeatures");
+                ga(account.name + ".send", "pageview");
+              });
+            }
+          );
+        },
+        fallback: function () {
+          "use strict";
+          window.ga =
+            window.ga ||
+            function () {
+              window.ga.q = window.ga.q || [];
+              window.ga.q.push(arguments);
+            };
+          window.ga.l = new Date();
+          tarteaucitron.addScript(
+            "https://www.google-analytics.com/analytics.js",
+            "",
+            function () {
+              (tarteaucitron.user.gaAccountYprox || []).forEach(function (
+                account
+              ) {
+                var uaCreate = {
+                  trackingId: account.account,
+                  storage: "none",
+                  name: account.name,
+                  cookieDomain: "auto",
+                  cookieExpires: 34128000 /* ~13 months */,
+                };
+
+                tarteaucitron.extend(
+                  uaCreate,
+                  tarteaucitron.user.analyticsUaCreate || {}
+                );
+
+                ga("create", uaCreate);
+                ga("set", "anonymizeIp", true);
+                ga(account.name + ".require", "displayfeatures");
+                ga(account.name + ".send", "pageview");
+              });
+            }
+          );
+        },
+      };
+    </script>
+
+    <script type="application/javascript">
+      tarteaucitron.user.analyticsUa = "UA-56263308-41";
+      (tarteaucitron.user.gaAccountYprox =
+        tarteaucitron.user.gaAccountYprox || []).push({
+        account: "UA-20551895-60",
+        name: "plateformeGA1",
+      });
+      (tarteaucitron.job = tarteaucitron.job || []).push("analyticsYprox");
+
+      (tarteaucitron.job = tarteaucitron.job || []).push("facebook");
+
+      (tarteaucitron.job = tarteaucitron.job || []).push("linkedin");
+
+      (tarteaucitron.job = tarteaucitron.job || []).push("twitter");
+
+      cookiesBannerMessage =
+        "Ce site utilise des cookies pour rendre votre navigation meilleure. En continuant votre navigation, vous acceptez l&#039;utilisation de ceux-ci.";
+
+      cookiesAcceptAll = "OK";
+
+      tarteaucitronCustomText = {
+        alertBigPrivacy: cookiesBannerMessage,
+        acceptAll: cookiesAcceptAll,
+      };
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link rel="preconnect" href="index-1.htm" crossorigin="" />
+    <link rel="preconnect" href="index-2.htm" crossorigin="" />
+    <link rel="preconnect" href="https://www.gstatic.com" crossorigin="" />
+    <link rel="preconnect" href="https://cdn.apple-mapkit.com" crossorigin="" />
+    <link
+      rel="preconnect"
+      href="https://cdn1.apple-mapkit.com"
+      crossorigin=""
+    />
+    <link
+      rel="preconnect"
+      href="https://cdn2.apple-mapkit.com"
+      crossorigin=""
+    />
+    <link
+      rel="preconnect"
+      href="https://cdn3.apple-mapkit.com"
+      crossorigin=""
+    />
+    <link
+      rel="preconnect"
+      href="https://cdn4.apple-mapkit.com"
+      crossorigin=""
+    />
+
+    <meta name="title" content="PBMM : Serrurerie Menuiserie " />
+    <meta
+      name="description"
+      content="Serrurerie Menuiserie PBMM : Confiez-nous la création de vos portes, fenêtres, vérandas, volets, stores, clôtures, escaliers et portail ."
+    />
+
+    <title>PBMM : PARIS BAT MENUISERIE METALLURGIE</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="media\original\key-144-245409-208756.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="128x128"
+      href="media\original\key-144-245409-208756.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="128x128"
+      href="media\original\key-144-245409-208756.png"
+    />
+    <link
+      href="css\reset.css"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      /* https://github.com/verlok/lazyload#show-the-images-while-they-load */
+      img:not([src]) {
+        visibility: hidden;
+      }
+
+      /* Fixes Firefox anomaly during image load */
+      @-moz-document url-prefix() {
+        img:-moz-loading {
+          visibility: hidden;
+        }
+      }
+    </style>
+
+    <script>
+      var sentryEnvironment = "prod";
+      var YproxThemeEngine = "weymouth";
+    </script>
+
+    <link rel="stylesheet" href="css\jquery.fancybox.css" />
+    <link
+      rel="stylesheet"
+      href="bundles\yproxfrontarticle\css\tango\skin.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="stylesheet\theme\9098-1583233178.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="stylesheet\site\21185\extra.css"
+    />
+    <script src="ajax\libs\jquery\1.9.1\jquery.min.js"></script>
+    <script src="js\cookie.js"></script>
+    <script src="js\nl2br.js"></script>
+    <script src="js\fancybox.min.js"></script>
+    <script src="js\jquery.cycle2.min.js"></script>
+    <script src="js\jquery.jcarousel.min.js"></script>
+    <script src="js\jquery.lightslider.min.js"></script>
+    <script src="js\jquery.lightgallery.min.js"></script>
+    <script src="js\article_slider.min.js"></script>
+    <script src="js\jquery.slimmenu.min.js"></script>
+
+    <script type="text/javascript">
+      jQuery(document).ready(function () {
+        $("#ytb_group_footer").insertAfter("#ytb_wrapper");
+      });
+    </script>
+
+    <script src="jquery-migrate-1.2.1.js"></script>
+
+    <script type="text/javascript">
+      function recaptchaGoogle() {
+        $('div[id^="google-recaptcha-contact"]').each(function () {
+          var contentId = $(this).data("contentid");
+
+          if (window["recaptcha" + contentId] !== undefined) {
+            return;
+          }
+
+          window["recaptcha" + contentId] = grecaptcha.render(
+            $(this).attr("id"),
+            {
+              sitekey: "6Lf0FqQUAAAAAHQc6KXfTqiAmPd0Ip0TQiFx6drl",
+              action: "homepage",
+              size: "invisible",
+              callback: window["launchSubmit" + contentId],
+            }
+          );
+        });
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="recaptcha\api.js?hl=fr&onload=recaptchaGoogle&render=explicit"
+    ></script>
+  </head>
+  <body class="layout-layout-1">
+    <script type="application/ld+json">
+      {
+        "@context": "http:\/\/schema.org",
+        "@type": "LocalBusiness",
+        "name": "PBMM",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "France",
+          "addressLocality": "Le Thillay",
+          "postalCode": "95500",
+          "streetAddress": "14 avenue du Moulin"
+        },
+        "telephone": "06 52 95 94 67"
+      }
+    </script>
+
+    <div id="ytb_wrapper" class="ytb_page_1113">
+      <!-- App\ThemeBundle\Twig\Weymouth\ThemeHandler !-->
+      <!-- START GROUP: header -->
+      <div id="ytb_group_header" class="ytb_group">
+        <!-- START ROW: header -->
+        <div id="ytb_row_header" class="ytb_row">
+          <!-- START BLOCK: header_1 -->
+          <div id="ytb_block_header_1" class="ytb_block">
+            <div class="ytb_extension_article content_17791">
+              <p>
+                <a href="index.htm"
+                  ><img
+                    alt=""
+                    style="width: 212px; height: 114px"
+                    title=""
+                    data-src="/media/original/key-144-245409-208756.png"
+                /></a>
+              </p>
+            </div>
+          </div>
+          <!-- END BLOCK: header_1 -->
+          <!-- START BLOCK: header_2 -->
+          <div id="ytb_block_header_2" class="ytb_block">
+            <div class="ytb_extension_site_navigation content_29043">
+              <ul
+                class="slimmenu nav_list nav_list_level_0"
+                id="navigation_29043"
+              >
+                <li class="nav_item nav_item_0 nav_level_1">
+                  <a class="current" href="index.htm"> Accueil </a>
+                </li>
+
+                <li class="nav_item nav_item_3 nav_level_1">
+                  <a href="realisations.html"> Galeries de nos réalisations </a>
+
+                  <ul class="nav_list nav_list_level_2">
+                    <li class="nav_item nav_item_0 nav_level_2">
+                      <a href="galerie-metallerie.html">
+                        Galerie Serrurerie et Métallerie ( Portails, clôtures et
+                        escaliers )
+                      </a>
+                    </li>
+                    <li class="nav_item nav_item_1 nav_level_2">
+                      <a href="galerie-volets.html">
+                        Galerie pose, transformation et réparation de volets
+                      </a>
+                    </li>
+
+                    <li class="nav_item nav_item_3 nav_level_2">
+                      <a href="galerie-menuiseries.html">
+                        Galerie Menuiseries ( Portes et fenêtres )
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav_item nav_item_1 nav_level_1">
+                  <a href="notre-entreprise.html"> Notre entreprise </a>
+                </li>
+                <li class="nav_item nav_item_2 nav_level_1">
+                  <a href="nos-prestations.html"> Nos prestations </a>
+
+                  <ul class="nav_list nav_list_level_1">
+                    <li class="nav_item nav_item_0 nav_level_2">
+                      <a href="menuiserie.html"> Menuiserie </a>
+                    </li>
+                    <li class="nav_item nav_item_1 nav_level_2">
+                      <a href="pose-volets.html"> Pose de volets </a>
+                    </li>
+                    <li class="nav_item nav_item_2 nav_level_2">
+                      <a href="serrurerie-metallerie.html">
+                        Serrurerie et Métallerie - Portails, clôtures et
+                        escaliers
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav_item nav_item_4 nav_level_1">
+                  <a href="contact.html"> Contact </a>
+                </li>
+              </ul>
+
+              <script type="text/javascript">
+                $(document).ready(function () {
+                  $("#navigation_29043").slimmenu({
+                    resizeWidth: "800",
+                    collapserTitle: "Menu",
+                    animSpeed: "medium",
+                    easingEffect: null,
+                    indentChildren: false,
+                    childrenIndenter: "&amp;nbsp;",
+                  });
+                });
+              </script>
+            </div>
+          </div>
+          <!-- END BLOCK: header_2 -->
+          <!-- START BLOCK: header_3 -->
+          <div id="ytb_block_header_3" class="ytb_block">
+            <div class="ytb_extension_tracker content_28431">
+              <style type="text/css">
+                .initialContent {
+                  cursor: pointer;
+                }
+                .hiddenContent {
+                  display: none;
+                }
+              </style>
+              <div class="initialContent initialContent28431">
+                <p>
+                  <span style="font-size: 24px"
+                    ><strong>06 52 95 94 67</strong></span
+                  >
+                </p>
+              </div>
+              <div class="hiddenContent hiddenContent28431">
+                <p>
+                  <span style="font-size: 24px"
+                    ><strong>06 52 95 94 67</strong></span
+                  >
+                </p>
+              </div>
+              <script type="text/javascript">
+                // si le contenu est présent 2 fois, pour éviter la double exécution du code
+                $(".initialContent28431")
+                  .unbind("click")
+                  .click(function () {
+                    $.post("/tracker/10209/increment");
+
+                    sendGaEvent(
+                      "contact-appel",
+                      "contact-appel-ok",
+                      "appel-ok_-_Serrurerie Menuiserie Sopel"
+                    );
+
+                    $(this).hide().next().show();
+                  });
+
+                function sendGaEvent(eventCategory, eventAction, eventLabel) {
+                  if (typeof window.ga === "function") {
+                    ga(
+                      "plateformeGA1.send",
+                      "event",
+                      eventCategory,
+                      eventAction,
+                      eventLabel
+                    );
+                  }
+                }
+              </script>
+            </div>
+          </div>
+          <!-- END BLOCK: header_3 -->
+        </div>
+        <!-- END ROW: header -->
+      </div>
+      <!-- END GROUP: header -->
+      <!-- START GROUP: A -->
+      <div id="ytb_group_A" class="ytb_group">
+        <!-- START ROW: A -->
+        <div id="ytb_row_A" class="ytb_row">
+          <!-- START BLOCK: A_1 -->
+          <div id="ytb_block_A_1" class="ytb_block">
+            <div class="ytb_extension_article content_18088">
+              <p>
+                <a href="notre-entreprise.html">Notre entreprise &gt;&gt;</a>
+              </p>
+            </div>
+          </div>
+          <!-- END BLOCK: A_1 -->
+          <!-- START BLOCK: A_2 -->
+          <div id="ytb_block_A_2" class="ytb_block">
+            <div class="ytb_extension_article content_18081">
+              <p>
+                <a href="notre-entreprise.html"
+                  >Découvrez nos valeurs et notre histoire</a
+                >
+              </p>
+            </div>
+          </div>
+          <!-- END BLOCK: A_2 -->
+        </div>
+        <!-- END ROW: A -->
+        <!-- START ROW: AL -->
+        <div id="ytb_row_AL" class="ytb_row">
+          <!-- START BLOCK: AL_1 -->
+          <div id="ytb_block_AL_1" class="ytb_block">
+            <div class="ytb_extension_article content_18080">
+              <p>
+                <a href="nos-prestations.html">Découvrez notre savoir-faire</a>
+              </p>
+            </div>
+          </div>
+          <!-- END BLOCK: AL_1 -->
+          <!-- START BLOCK: AL_2 -->
+          <div id="ytb_block_AL_2" class="ytb_block">
+            <div class="ytb_extension_article content_18082">
+              <p><a href="nos-prestations.html">&lt;&lt; Nos prestations</a></p>
+            </div>
+          </div>
+          <!-- END BLOCK: AL_2 -->
+        </div>
+        <!-- END ROW: AL -->
+      </div>
+      <!-- END GROUP: A -->
+      <!-- START GROUP: B -->
+      <div id="ytb_group_B" class="ytb_group">
+        <!-- START ROW: B -->
+        <div id="ytb_row_B" class="ytb_row">
+          <!-- START BLOCK: B_1 -->
+          <div id="ytb_block_B_1" class="ytb_block">
+            <div class="ytb_extension_article content_18083">
+              <p>
+                <a href="realisations.html">Vois toutes nos réalisations</a>
+              </p>
+            </div>
+          </div>
+          <!-- END BLOCK: B_1 -->
+          <!-- START BLOCK: B_2 -->
+          <div id="ytb_block_B_2" class="ytb_block">
+            <div class="ytb_extension_article content_18084">
+              <p><a href="realisations.html">&lt;&lt; Nos réalisations</a></p>
+            </div>
+          </div>
+          <!-- END BLOCK: B_2 -->
+        </div>
+        <!-- END ROW: B -->
+        <!-- START ROW: BL -->
+        <div id="ytb_row_BL" class="ytb_row">
+          <!-- START BLOCK: BL_1 -->
+          <div id="ytb_block_BL_1" class="ytb_block"></div>
+          <!-- END BLOCK: BL_1 -->
+        </div>
+        <!-- END ROW: BL -->
+      </div>
+      <!-- END GROUP: B -->
+      <!-- START GROUP: C -->
+      <div id="ytb_group_C" class="ytb_group">
+        <!-- START ROW: C -->
+        <div id="ytb_row_C" class="ytb_row">
+          <!-- START BLOCK: C_1 -->
+          <div id="ytb_block_C_1" class="ytb_block">
+            <div class="ytb_extension_article content_18085">
+              <p><a href="contact.html">Contact &gt;&gt;</a></p>
+            </div>
+          </div>
+          <!-- END BLOCK: C_1 -->
+          <!-- START BLOCK: C_2 -->
+          <div id="ytb_block_C_2" class="ytb_block">
+            <div class="ytb_extension_article content_18086">
+              <p><a href="contact.html">Contactez-nous ! </a></p>
+            </div>
+          </div>
+          <!-- END BLOCK: C_2 -->
+        </div>
+        <!-- END ROW: C -->
+        <!-- START ROW: CL -->
+        <div id="ytb_row_CL" class="ytb_row">
+          <!-- START BLOCK: CL_1 -->
+          <div id="ytb_block_CL_1" class="ytb_block">
+            <div class="ytb_extension_article content_18089">
+              <h1><span style="color: #114c98">PBMM </span></h1>
+
+              <p>
+                <span style="font-weight: bold; color: #114c98">
+                  Pour toutes les travaux menuiserie métallurgie réalisation sûr
+                  portail, portillon, clôture, balcon, garde corps, balustrade,
+                  terrasse, escaliers, main courante, fenêtres de sécurité,
+                  porte sécurité, porte d'entrée, portillon jardin, séparation
+                  ferforge, décoration ferforge, intervention changement de
+                  serrure. Devis gratuit </span
+                ><br />
+                <strong
+                  >Particuliers, professionnels ou collectivités, nous assurons
+                  la conception, la fabrication sur-mesure et la réparation
+                  ainsi que le suivi après pose de nos réalisations.
+                </strong>
+              </p>
+            </div>
+          </div>
+          <!-- END BLOCK: CL_1 -->
+          <!-- START BLOCK: CL_2 -->
+          <div id="ytb_block_CL_2" class="ytb_block">
+            <div class="ytb_extension_tracker content_28431">
+              <style type="text/css">
+                .initialContent {
+                  cursor: pointer;
+                }
+                .hiddenContent {
+                  display: none;
+                }
+              </style>
+              <div class="initialContent initialContent28431">
+                <p>
+                  <span style="font-size: 24px"
+                    ><strong>06 42 67 15 85</strong></span
+                  >
+                </p>
+              </div>
+              <div class="hiddenContent hiddenContent28431">
+                <p>
+                  <span style="font-size: 24px"
+                    ><strong>06 42 67 15 85</strong></span
+                  >
+                </p>
+              </div>
+              <script type="text/javascript">
+                // si le contenu est présent 2 fois, pour éviter la double exécution du code
+                $(".initialContent28431")
+                  .unbind("click")
+                  .click(function () {
+                    $.post("/tracker/10209/increment");
+
+                    sendGaEvent(
+                      "contact-appel",
+                      "contact-appel-ok",
+                      "appel-ok_-_Serrurerie Menuiserie Sopel"
+                    );
+
+                    $(this).hide().next().show();
+                  });
+
+                function sendGaEvent(eventCategory, eventAction, eventLabel) {
+                  if (typeof window.ga === "function") {
+                    ga(
+                      "plateformeGA1.send",
+                      "event",
+                      eventCategory,
+                      eventAction,
+                      eventLabel
+                    );
+                  }
+                }
+              </script>
+            </div>
+          </div>
+          <!-- END BLOCK: CL_2 -->
+          <!-- START BLOCK: CL_3 -->
+          <div id="ytb_block_CL_3" class="ytb_block"></div>
+          <!-- END BLOCK: CL_3 -->
+        </div>
+        <!-- END ROW: CL -->
+      </div>
+      <!-- END GROUP: C -->
+      <!-- START GROUP: footer -->
+      <div id="ytb_group_footer" class="ytb_group">
+        <!-- START ROW: footer -->
+        <div id="ytb_row_footer" class="ytb_row">
+          <!-- START BLOCK: footer_1 -->
+          <div id="ytb_block_footer_1" class="ytb_block">
+            <div class="ytb_extension_article content_17813">
+              <p>
+                <span class="st"
+                  >PBMM : PARIS BAT MENUISERIE METALLURGIE © 2021
+                </span>
+              </p>
+              <br />
+
+              <span class="social">
+                <ul id="social" style="font-size: 24px">
+                  <li>
+                    <a
+                      target="_blank"
+                      href="https://www.instagram.com/parisbatmeta/"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      href="https://www.facebook.com/PBMM-106506264502813/"
+                      ><i class="fab fa-facebook-square"></i>
+                    </a>
+                  </li>
+                </ul>
+              </span>
+            </div>
+          </div>
+          <!-- END BLOCK: footer_1 -->
+          <!-- START BLOCK: footer_2 -->
+          <div id="ytb_block_footer_2" class="ytb_block">
+            <div class="ytb_extension_article content_17815">
+              <p>
+                <a href="mentions-legales.html">Mentions légales</a> -
+                <a href="contact.html">contact</a>
+              </p>
+            </div>
+            <br class="automaticBreak" />
+            <div class="ytb_extension_theme content_">
+              <p>
+                Site créé par
+                <a
+                  href="https://www.oceaneverdi.dev"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >Océane Verdi</a
+                >
+              </p>
+            </div>
+          </div>
+          <!-- END BLOCK: footer_2 -->
+        </div>
+        <!-- END ROW: footer -->
+      </div>
+      <!-- END GROUP: footer -->
+    </div>
+
+    <div
+      class="tarteaucitronBlockManage"
+      style="
+        width: 100%;
+        background: black;
+        position: absolute;
+        padding: 10px 0;
+        text-align: center;
+      "
+    >
+      <a
+        class="tarteaucitonLinkManage"
+        href="#"
+        onclick="tarteaucitron.userInterface.openPanel();"
+        style="color: white; font-size: 14px"
+        >Gestion des cookies</a
+      >
+    </div>
+
+    <script src="npm\intersection-observer@0.7.0\intersection-observer.js"></script>
+    <script>
+      // Set the options to make LazyLoad self-initialize
+      window.lazyLoadOptions = {};
+    </script>
+    <script
+      async=""
+      src="npm\vanilla-lazyload@12.4.0\dist\lazyload.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      $("#divInfoOnTop_Hidden").show();
+      $("#divInfoOnTop_Shown_ImgClose").click(function () {
+        $("#divInfoOnTop_Shown").hide("slow", function () {
+          $("#divInfoOnTop_Hidden").show("fast");
+        });
+      });
+      $("#divInfoOnTop_Hidden").click(function () {
+        $(this).hide("fast", function () {
+          $("#divInfoOnTop_Shown").show("slow");
+        });
+      });
+    </script>
+  </body>
+</html>
